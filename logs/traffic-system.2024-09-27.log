@@ -1,0 +1,128 @@
+2024-09-27 18:27:22.4310 {restartedMain} INFO  com.everpower.traffic_web.TrafficWebApplication -Starting TrafficWebApplication using Java 21.0.4 with PID 379252 (/home/ym/traffic-master/traffic-web/target/classes started by root in /home/ym/traffic-master)
+2024-09-27 18:27:22.4350 {restartedMain} INFO  com.everpower.traffic_web.TrafficWebApplication -The following 1 profile is active: "dev"
+2024-09-27 18:27:22.4770 {restartedMain} INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor -Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-09-27 18:27:22.4770 {restartedMain} INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor -For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-09-27 18:27:23.2550 {restartedMain} INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer -Tomcat initialized with port 8080 (http)
+2024-09-27 18:27:23.2630 {restartedMain} INFO  org.apache.coyote.http11.Http11NioProtocol -Initializing ProtocolHandler ["http-nio-8080"]
+2024-09-27 18:27:23.2660 {restartedMain} INFO  org.apache.catalina.core.StandardService -Starting service [Tomcat]
+2024-09-27 18:27:23.2670 {restartedMain} INFO  org.apache.catalina.core.StandardEngine -Starting Servlet engine: [Apache Tomcat/10.1.30]
+2024-09-27 18:27:23.2940 {restartedMain} INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] -Initializing Spring embedded WebApplicationContext
+2024-09-27 18:27:23.2950 {restartedMain} INFO  o.s.b.w.s.c.ServletWebServerApplicationContext -Root WebApplicationContext: initialization completed in 816 ms
+2024-09-27 18:27:23.5370 {restartedMain} WARN  o.s.b.a.t.ThymeleafAutoConfiguration$DefaultTemplateResolverConfiguration -Cannot find template location: classpath:/templates/ (please add some templates, check your Thymeleaf configuration, or set spring.thymeleaf.check-template-location=false)
+2024-09-27 18:27:23.5730 {restartedMain} WARN  o.s.b.d.autoconfigure.OptionalLiveReloadServer -Unable to start LiveReload server
+2024-09-27 18:27:23.5860 {restartedMain} INFO  org.apache.coyote.http11.Http11NioProtocol -Starting ProtocolHandler ["http-nio-8080"]
+2024-09-27 18:27:23.5900 {restartedMain} WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext -Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'
+2024-09-27 18:27:23.6040 {restartedMain} INFO  o.s.b.a.logging.ConditionEvaluationReportLogger -
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2024-09-27 18:27:23.6180 {restartedMain} ERROR o.s.b.diagnostics.LoggingFailureAnalysisReporter -
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 8080 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 8080 or configure this application to listen on another port.
+
+2024-09-27 18:28:14.2880 {restartedMain} INFO  com.everpower.traffic_web.TrafficWebApplication -Starting TrafficWebApplication using Java 21.0.4 with PID 379939 (/home/ym/traffic-master/traffic-web/target/classes started by root in /home/ym/traffic-master)
+2024-09-27 18:28:14.2900 {restartedMain} INFO  com.everpower.traffic_web.TrafficWebApplication -The following 1 profile is active: "dev"
+2024-09-27 18:28:14.3370 {restartedMain} INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor -Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-09-27 18:28:14.3380 {restartedMain} INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor -For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-09-27 18:28:15.2340 {restartedMain} INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer -Tomcat initialized with port 8080 (http)
+2024-09-27 18:28:15.2440 {restartedMain} INFO  org.apache.coyote.http11.Http11NioProtocol -Initializing ProtocolHandler ["http-nio-8080"]
+2024-09-27 18:28:15.2470 {restartedMain} INFO  org.apache.catalina.core.StandardService -Starting service [Tomcat]
+2024-09-27 18:28:15.2470 {restartedMain} INFO  org.apache.catalina.core.StandardEngine -Starting Servlet engine: [Apache Tomcat/10.1.30]
+2024-09-27 18:28:15.2730 {restartedMain} INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] -Initializing Spring embedded WebApplicationContext
+2024-09-27 18:28:15.2740 {restartedMain} INFO  o.s.b.w.s.c.ServletWebServerApplicationContext -Root WebApplicationContext: initialization completed in 935 ms
+2024-09-27 18:28:15.4990 {restartedMain} WARN  o.s.b.a.t.ThymeleafAutoConfiguration$DefaultTemplateResolverConfiguration -Cannot find template location: classpath:/templates/ (please add some templates, check your Thymeleaf configuration, or set spring.thymeleaf.check-template-location=false)
+2024-09-27 18:28:15.5300 {restartedMain} WARN  o.s.b.d.autoconfigure.OptionalLiveReloadServer -Unable to start LiveReload server
+2024-09-27 18:28:15.5400 {restartedMain} INFO  org.apache.coyote.http11.Http11NioProtocol -Starting ProtocolHandler ["http-nio-8080"]
+2024-09-27 18:28:15.5440 {restartedMain} WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext -Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'
+2024-09-27 18:28:15.5560 {restartedMain} INFO  o.s.b.a.logging.ConditionEvaluationReportLogger -
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2024-09-27 18:28:15.5680 {restartedMain} ERROR o.s.b.diagnostics.LoggingFailureAnalysisReporter -
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 8080 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 8080 or configure this application to listen on another port.
+
+2024-09-27 18:30:02.9340 {restartedMain} INFO  com.everpower.traffic_web.TrafficWebApplication -Starting TrafficWebApplication using Java 21.0.4 with PID 381581 (/home/ym/traffic-master/traffic-web/target/classes started by root in /home/ym/traffic-master)
+2024-09-27 18:30:02.9350 {restartedMain} INFO  com.everpower.traffic_web.TrafficWebApplication -The following 1 profile is active: "dev"
+2024-09-27 18:30:02.9810 {restartedMain} INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor -Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-09-27 18:30:02.9810 {restartedMain} INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor -For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-09-27 18:30:03.8420 {restartedMain} INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer -Tomcat initialized with port 8080 (http)
+2024-09-27 18:30:03.8520 {restartedMain} INFO  org.apache.coyote.http11.Http11NioProtocol -Initializing ProtocolHandler ["http-nio-8080"]
+2024-09-27 18:30:03.8560 {restartedMain} INFO  org.apache.catalina.core.StandardService -Starting service [Tomcat]
+2024-09-27 18:30:03.8560 {restartedMain} INFO  org.apache.catalina.core.StandardEngine -Starting Servlet engine: [Apache Tomcat/10.1.30]
+2024-09-27 18:30:03.8830 {restartedMain} INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] -Initializing Spring embedded WebApplicationContext
+2024-09-27 18:30:03.8850 {restartedMain} INFO  o.s.b.w.s.c.ServletWebServerApplicationContext -Root WebApplicationContext: initialization completed in 902 ms
+2024-09-27 18:30:04.1690 {restartedMain} WARN  o.s.b.a.t.ThymeleafAutoConfiguration$DefaultTemplateResolverConfiguration -Cannot find template location: classpath:/templates/ (please add some templates, check your Thymeleaf configuration, or set spring.thymeleaf.check-template-location=false)
+2024-09-27 18:30:04.2320 {restartedMain} WARN  o.s.b.d.autoconfigure.OptionalLiveReloadServer -Unable to start LiveReload server
+2024-09-27 18:30:04.2540 {restartedMain} INFO  org.apache.coyote.http11.Http11NioProtocol -Starting ProtocolHandler ["http-nio-8080"]
+2024-09-27 18:30:04.2600 {restartedMain} WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext -Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'
+2024-09-27 18:30:04.2760 {restartedMain} INFO  o.s.b.a.logging.ConditionEvaluationReportLogger -
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2024-09-27 18:30:04.2920 {restartedMain} ERROR o.s.b.diagnostics.LoggingFailureAnalysisReporter -
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 8080 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 8080 or configure this application to listen on another port.
+
+2024-09-27 18:31:41.3580 {restartedMain} INFO  com.everpower.traffic_web.TrafficWebApplication -Starting TrafficWebApplication using Java 21.0.4 with PID 382330 (/home/ym/traffic-master/traffic-web/target/classes started by root in /home/ym/traffic-master)
+2024-09-27 18:31:41.3600 {restartedMain} INFO  com.everpower.traffic_web.TrafficWebApplication -The following 1 profile is active: "dev"
+2024-09-27 18:31:41.4090 {restartedMain} INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor -Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-09-27 18:31:41.4100 {restartedMain} INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor -For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-09-27 18:31:42.3230 {restartedMain} INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer -Tomcat initialized with port 8080 (http)
+2024-09-27 18:31:42.3340 {restartedMain} INFO  org.apache.coyote.http11.Http11NioProtocol -Initializing ProtocolHandler ["http-nio-8080"]
+2024-09-27 18:31:42.3380 {restartedMain} INFO  org.apache.catalina.core.StandardService -Starting service [Tomcat]
+2024-09-27 18:31:42.3380 {restartedMain} INFO  org.apache.catalina.core.StandardEngine -Starting Servlet engine: [Apache Tomcat/10.1.30]
+2024-09-27 18:31:42.3710 {restartedMain} INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] -Initializing Spring embedded WebApplicationContext
+2024-09-27 18:31:42.3720 {restartedMain} INFO  o.s.b.w.s.c.ServletWebServerApplicationContext -Root WebApplicationContext: initialization completed in 961 ms
+2024-09-27 18:31:42.6720 {restartedMain} WARN  o.s.b.a.t.ThymeleafAutoConfiguration$DefaultTemplateResolverConfiguration -Cannot find template location: classpath:/templates/ (please add some templates, check your Thymeleaf configuration, or set spring.thymeleaf.check-template-location=false)
+2024-09-27 18:31:42.7180 {restartedMain} INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer -LiveReload server is running on port 35729
+2024-09-27 18:31:42.7430 {restartedMain} INFO  org.apache.coyote.http11.Http11NioProtocol -Starting ProtocolHandler ["http-nio-8080"]
+2024-09-27 18:31:42.7710 {restartedMain} INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer -Tomcat started on port 8080 (http) with context path '/'
+2024-09-27 18:31:42.7810 {restartedMain} INFO  com.everpower.traffic_web.TrafficWebApplication -Started TrafficWebApplication in 1.89 seconds (process running for 2.236)
+2024-09-27 18:32:24.8720 {http-nio-8080-exec-1} INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] -Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-09-27 18:32:24.8730 {http-nio-8080-exec-1} INFO  org.springframework.web.servlet.DispatcherServlet -Initializing Servlet 'dispatcherServlet'
+2024-09-27 18:32:24.8740 {http-nio-8080-exec-1} INFO  org.springframework.web.servlet.DispatcherServlet -Completed initialization in 1 ms
+2024-09-27 18:32:31.3190 {http-nio-8080-exec-2} ERROR c.everpower.traffic_web.controller.userController -test my logger
+2024-09-27 18:34:02.5810 {File Watcher} INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener -Restarting due to 6 class path changes (0 additions, 0 deletions, 6 modifications)
+2024-09-27 18:34:02.5840 {Thread-5} INFO  org.apache.coyote.http11.Http11NioProtocol -Stopping ProtocolHandler ["http-nio-8080"]
+2024-09-27 18:34:02.6700 {restartedMain} INFO  com.everpower.traffic_web.TrafficWebApplication -Starting TrafficWebApplication using Java 21.0.4 with PID 382330 (/home/ym/traffic-master/traffic-web/target/classes started by root in /home/ym/traffic-master)
+2024-09-27 18:34:02.6700 {restartedMain} INFO  com.everpower.traffic_web.TrafficWebApplication -The following 1 profile is active: "dev"
+2024-09-27 18:34:02.8640 {restartedMain} INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer -Tomcat initialized with port 8080 (http)
+2024-09-27 18:34:02.8650 {restartedMain} INFO  org.apache.coyote.http11.Http11NioProtocol -Initializing ProtocolHandler ["http-nio-8080"]
+2024-09-27 18:34:02.8660 {restartedMain} INFO  org.apache.catalina.core.StandardService -Starting service [Tomcat]
+2024-09-27 18:34:02.8660 {restartedMain} INFO  org.apache.catalina.core.StandardEngine -Starting Servlet engine: [Apache Tomcat/10.1.30]
+2024-09-27 18:34:02.8750 {restartedMain} INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] -Initializing Spring embedded WebApplicationContext
+2024-09-27 18:34:02.8750 {restartedMain} INFO  o.s.b.w.s.c.ServletWebServerApplicationContext -Root WebApplicationContext: initialization completed in 201 ms
+2024-09-27 18:34:02.9360 {restartedMain} WARN  o.s.b.a.t.ThymeleafAutoConfiguration$DefaultTemplateResolverConfiguration -Cannot find template location: classpath:/templates/ (please add some templates, check your Thymeleaf configuration, or set spring.thymeleaf.check-template-location=false)
+2024-09-27 18:34:02.9500 {restartedMain} INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer -LiveReload server is running on port 35729
+2024-09-27 18:34:02.9570 {restartedMain} INFO  org.apache.coyote.http11.Http11NioProtocol -Starting ProtocolHandler ["http-nio-8080"]
+2024-09-27 18:34:02.9680 {restartedMain} INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer -Tomcat started on port 8080 (http) with context path '/'
+2024-09-27 18:34:02.9720 {restartedMain} INFO  com.everpower.traffic_web.TrafficWebApplication -Started TrafficWebApplication in 0.341 seconds (process running for 142.428)
+2024-09-27 18:34:02.9750 {restartedMain} INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener -Condition evaluation unchanged

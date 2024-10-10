@@ -1,0 +1,935 @@
+2024-10-05 10:45:50.3910 {restartedMain} INFO  c.e.traffic_system.TrafficSystemApplication -Starting TrafficSystemApplication using Java 21.0.4 with PID 1185651 (/home/ym/traffic-master/traffic-system/target/classes started by root in /home/ym/traffic-master)
+2024-10-05 10:45:50.3930 {restartedMain} INFO  c.e.traffic_system.TrafficSystemApplication -The following 1 profile is active: "dev"
+2024-10-05 10:45:50.4430 {restartedMain} INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor -Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-10-05 10:45:50.4430 {restartedMain} INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor -For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-10-05 10:45:51.0930 {restartedMain} INFO  o.s.d.r.config.RepositoryConfigurationDelegate -Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-10-05 10:45:51.1460 {restartedMain} INFO  o.s.d.r.config.RepositoryConfigurationDelegate -Finished Spring Data repository scanning in 46 ms. Found 1 JPA repository interface.
+2024-10-05 10:45:51.6040 {restartedMain} INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer -Tomcat initialized with port 8080 (http)
+2024-10-05 10:45:51.6210 {restartedMain} INFO  org.apache.coyote.http11.Http11NioProtocol -Initializing ProtocolHandler ["http-nio-8080"]
+2024-10-05 10:45:51.6250 {restartedMain} INFO  org.apache.catalina.core.StandardService -Starting service [Tomcat]
+2024-10-05 10:45:51.6250 {restartedMain} INFO  org.apache.catalina.core.StandardEngine -Starting Servlet engine: [Apache Tomcat/10.1.30]
+2024-10-05 10:45:51.6710 {restartedMain} INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] -Initializing Spring embedded WebApplicationContext
+2024-10-05 10:45:51.6740 {restartedMain} INFO  o.s.b.w.s.c.ServletWebServerApplicationContext -Root WebApplicationContext: initialization completed in 1228 ms
+2024-10-05 10:45:51.8000 {restartedMain} INFO  com.zaxxer.hikari.HikariDataSource -HikariPool-1 - Starting...
+2024-10-05 10:45:51.8030 {restartedMain} WARN  com.zaxxer.hikari.util.DriverDataSource -Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2024-10-05 10:45:52.1620 {restartedMain} INFO  com.zaxxer.hikari.pool.HikariPool -HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@32a4aab5
+2024-10-05 10:45:52.1640 {restartedMain} INFO  com.zaxxer.hikari.HikariDataSource -HikariPool-1 - Start completed.
+2024-10-05 10:45:52.2060 {restartedMain} INFO  org.hibernate.jpa.internal.util.LogHelper -HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-10-05 10:45:52.2490 {restartedMain} INFO  org.hibernate.Version -HHH000412: Hibernate ORM core version 6.5.3.Final
+2024-10-05 10:45:52.2770 {restartedMain} INFO  o.hibernate.cache.internal.RegionFactoryInitiator -HHH000026: Second-level cache disabled
+2024-10-05 10:45:52.5360 {restartedMain} INFO  o.s.o.j.persistenceunit.SpringPersistenceUnitInfo -No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-10-05 10:45:52.7070 {restartedMain} ERROR o.s.orm.jpa.LocalContainerEntityManagerFactoryBean -Failed to initialize JPA EntityManagerFactory: Entity 'com.everpower.traffic_system.info.UserInfo' has no identifier (every '@Entity' class must declare or inherit at least one '@Id' or '@EmbeddedId' property)
+2024-10-05 10:45:52.7080 {restartedMain} WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext -Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Entity 'com.everpower.traffic_system.info.UserInfo' has no identifier (every '@Entity' class must declare or inherit at least one '@Id' or '@EmbeddedId' property)
+2024-10-05 10:45:52.7090 {restartedMain} INFO  com.zaxxer.hikari.HikariDataSource -HikariPool-1 - Shutdown initiated...
+2024-10-05 10:45:52.7370 {restartedMain} INFO  com.zaxxer.hikari.HikariDataSource -HikariPool-1 - Shutdown completed.
+2024-10-05 10:45:52.7400 {restartedMain} INFO  org.apache.catalina.core.StandardService -Stopping service [Tomcat]
+2024-10-05 10:45:52.7530 {restartedMain} INFO  o.s.b.a.logging.ConditionEvaluationReportLogger -
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2024-10-05 10:45:52.7680 {restartedMain} ERROR org.springframework.boot.SpringApplication -Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Entity 'com.everpower.traffic_system.info.UserInfo' has no identifier (every '@Entity' class must declare or inherit at least one '@Id' or '@EmbeddedId' property)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1806)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:600)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:522)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:337)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:205)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:954)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:625)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:456)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:335)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1363)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1352)
+	at com.everpower.traffic_system.TrafficSystemApplication.main(TrafficSystemApplication.java:10)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50)
+Caused by: org.hibernate.AnnotationException: Entity 'com.everpower.traffic_system.info.UserInfo' has no identifier (every '@Entity' class must declare or inherit at least one '@Id' or '@EmbeddedId' property)
+	at org.hibernate.boot.model.internal.InheritanceState.determineDefaultAccessType(InheritanceState.java:279)
+	at org.hibernate.boot.model.internal.InheritanceState.getElementsToProcess(InheritanceState.java:215)
+	at org.hibernate.boot.model.internal.InheritanceState.postProcess(InheritanceState.java:160)
+	at org.hibernate.boot.model.internal.EntityBinder.handleIdentifier(EntityBinder.java:407)
+	at org.hibernate.boot.model.internal.EntityBinder.bindEntityClass(EntityBinder.java:248)
+	at org.hibernate.boot.model.internal.AnnotationBinder.bindClass(AnnotationBinder.java:399)
+	at org.hibernate.boot.model.source.internal.annotations.AnnotationMetadataSourceProcessorImpl.processEntityHierarchies(AnnotationMetadataSourceProcessorImpl.java:259)
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess$1.processEntityHierarchies(MetadataBuildingProcess.java:281)
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.complete(MetadataBuildingProcess.java:324)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.metadata(EntityManagerFactoryBuilderImpl.java:1431)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1502)
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:75)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:390)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:409)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:396)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:366)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1853)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1802)
+	... 18 common frames omitted
+2024-10-05 10:52:57.0930 {restartedMain} INFO  c.e.traffic_system.TrafficSystemApplication -Starting TrafficSystemApplication using Java 21.0.4 with PID 1187815 (/home/ym/traffic-master/traffic-system/target/classes started by root in /home/ym/traffic-master)
+2024-10-05 10:52:57.0940 {restartedMain} INFO  c.e.traffic_system.TrafficSystemApplication -The following 1 profile is active: "dev"
+2024-10-05 10:52:57.1420 {restartedMain} INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor -Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-10-05 10:52:57.1430 {restartedMain} INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor -For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-10-05 10:52:57.7520 {restartedMain} INFO  o.s.d.r.config.RepositoryConfigurationDelegate -Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-10-05 10:52:57.7960 {restartedMain} INFO  o.s.d.r.config.RepositoryConfigurationDelegate -Finished Spring Data repository scanning in 36 ms. Found 1 JPA repository interface.
+2024-10-05 10:52:58.2590 {restartedMain} INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer -Tomcat initialized with port 8080 (http)
+2024-10-05 10:52:58.2670 {restartedMain} INFO  org.apache.coyote.http11.Http11NioProtocol -Initializing ProtocolHandler ["http-nio-8080"]
+2024-10-05 10:52:58.2710 {restartedMain} INFO  org.apache.catalina.core.StandardService -Starting service [Tomcat]
+2024-10-05 10:52:58.2710 {restartedMain} INFO  org.apache.catalina.core.StandardEngine -Starting Servlet engine: [Apache Tomcat/10.1.30]
+2024-10-05 10:52:58.3030 {restartedMain} INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] -Initializing Spring embedded WebApplicationContext
+2024-10-05 10:52:58.3040 {restartedMain} INFO  o.s.b.w.s.c.ServletWebServerApplicationContext -Root WebApplicationContext: initialization completed in 1160 ms
+2024-10-05 10:52:58.4350 {restartedMain} INFO  com.zaxxer.hikari.HikariDataSource -HikariPool-1 - Starting...
+2024-10-05 10:52:58.4410 {restartedMain} WARN  com.zaxxer.hikari.util.DriverDataSource -Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2024-10-05 10:52:58.7310 {restartedMain} INFO  com.zaxxer.hikari.pool.HikariPool -HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@2fdb94c7
+2024-10-05 10:52:58.7340 {restartedMain} INFO  com.zaxxer.hikari.HikariDataSource -HikariPool-1 - Start completed.
+2024-10-05 10:52:58.7660 {restartedMain} INFO  org.hibernate.jpa.internal.util.LogHelper -HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-10-05 10:52:58.8020 {restartedMain} INFO  org.hibernate.Version -HHH000412: Hibernate ORM core version 6.5.3.Final
+2024-10-05 10:52:58.8240 {restartedMain} INFO  o.hibernate.cache.internal.RegionFactoryInitiator -HHH000026: Second-level cache disabled
+2024-10-05 10:52:59.0680 {restartedMain} INFO  o.s.o.j.persistenceunit.SpringPersistenceUnitInfo -No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-10-05 10:52:59.2110 {restartedMain} ERROR o.s.orm.jpa.LocalContainerEntityManagerFactoryBean -Failed to initialize JPA EntityManagerFactory: Entity 'com.everpower.traffic_system.info.UserInfo' has no identifier (every '@Entity' class must declare or inherit at least one '@Id' or '@EmbeddedId' property)
+2024-10-05 10:52:59.2130 {restartedMain} WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext -Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Entity 'com.everpower.traffic_system.info.UserInfo' has no identifier (every '@Entity' class must declare or inherit at least one '@Id' or '@EmbeddedId' property)
+2024-10-05 10:52:59.2140 {restartedMain} INFO  com.zaxxer.hikari.HikariDataSource -HikariPool-1 - Shutdown initiated...
+2024-10-05 10:52:59.2460 {restartedMain} INFO  com.zaxxer.hikari.HikariDataSource -HikariPool-1 - Shutdown completed.
+2024-10-05 10:52:59.2480 {restartedMain} INFO  org.apache.catalina.core.StandardService -Stopping service [Tomcat]
+2024-10-05 10:52:59.2620 {restartedMain} INFO  o.s.b.a.logging.ConditionEvaluationReportLogger -
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2024-10-05 10:52:59.2780 {restartedMain} ERROR org.springframework.boot.SpringApplication -Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Entity 'com.everpower.traffic_system.info.UserInfo' has no identifier (every '@Entity' class must declare or inherit at least one '@Id' or '@EmbeddedId' property)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1806)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:600)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:522)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:337)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:205)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:954)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:625)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:456)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:335)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1363)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1352)
+	at com.everpower.traffic_system.TrafficSystemApplication.main(TrafficSystemApplication.java:10)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50)
+Caused by: org.hibernate.AnnotationException: Entity 'com.everpower.traffic_system.info.UserInfo' has no identifier (every '@Entity' class must declare or inherit at least one '@Id' or '@EmbeddedId' property)
+	at org.hibernate.boot.model.internal.InheritanceState.determineDefaultAccessType(InheritanceState.java:279)
+	at org.hibernate.boot.model.internal.InheritanceState.getElementsToProcess(InheritanceState.java:215)
+	at org.hibernate.boot.model.internal.InheritanceState.postProcess(InheritanceState.java:160)
+	at org.hibernate.boot.model.internal.EntityBinder.handleIdentifier(EntityBinder.java:407)
+	at org.hibernate.boot.model.internal.EntityBinder.bindEntityClass(EntityBinder.java:248)
+	at org.hibernate.boot.model.internal.AnnotationBinder.bindClass(AnnotationBinder.java:399)
+	at org.hibernate.boot.model.source.internal.annotations.AnnotationMetadataSourceProcessorImpl.processEntityHierarchies(AnnotationMetadataSourceProcessorImpl.java:259)
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess$1.processEntityHierarchies(MetadataBuildingProcess.java:281)
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.complete(MetadataBuildingProcess.java:324)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.metadata(EntityManagerFactoryBuilderImpl.java:1431)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1502)
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:75)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:390)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:409)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:396)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:366)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1853)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1802)
+	... 18 common frames omitted
+2024-10-05 11:01:15.6980 {restartedMain} INFO  c.e.traffic_system.TrafficSystemApplication -Starting TrafficSystemApplication using Java 21.0.4 with PID 1190173 (/home/ym/traffic-master/traffic-system/target/classes started by root in /home/ym/traffic-master)
+2024-10-05 11:01:15.7010 {restartedMain} INFO  c.e.traffic_system.TrafficSystemApplication -The following 1 profile is active: "dev"
+2024-10-05 11:01:15.7460 {restartedMain} INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor -Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-10-05 11:01:15.7470 {restartedMain} INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor -For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-10-05 11:01:16.3630 {restartedMain} INFO  o.s.d.r.config.RepositoryConfigurationDelegate -Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-10-05 11:01:16.4130 {restartedMain} INFO  o.s.d.r.config.RepositoryConfigurationDelegate -Finished Spring Data repository scanning in 43 ms. Found 1 JPA repository interface.
+2024-10-05 11:01:16.9190 {restartedMain} INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer -Tomcat initialized with port 8080 (http)
+2024-10-05 11:01:16.9290 {restartedMain} INFO  org.apache.coyote.http11.Http11NioProtocol -Initializing ProtocolHandler ["http-nio-8080"]
+2024-10-05 11:01:16.9330 {restartedMain} INFO  org.apache.catalina.core.StandardService -Starting service [Tomcat]
+2024-10-05 11:01:16.9330 {restartedMain} INFO  org.apache.catalina.core.StandardEngine -Starting Servlet engine: [Apache Tomcat/10.1.30]
+2024-10-05 11:01:16.9890 {restartedMain} INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] -Initializing Spring embedded WebApplicationContext
+2024-10-05 11:01:16.9900 {restartedMain} INFO  o.s.b.w.s.c.ServletWebServerApplicationContext -Root WebApplicationContext: initialization completed in 1242 ms
+2024-10-05 11:01:17.0510 {restartedMain} WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext -Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Failed to initialize dependency 'dataSourceScriptDatabaseInitializer' of LoadTimeWeaverAware bean 'entityManagerFactory': Error creating bean with name 'dataSourceScriptDatabaseInitializer' defined in class path resource [org/springframework/boot/autoconfigure/sql/init/DataSourceInitializationConfiguration.class]: Unsatisfied dependency expressed through method 'dataSourceScriptDatabaseInitializer' parameter 0: Error creating bean with name 'dataSource' defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Hikari.class]: Failed to instantiate [com.zaxxer.hikari.HikariDataSource]: Factory method 'dataSource' threw exception with message: Cannot load driver class: com.mysql.jdbc.driver
+2024-10-05 11:01:17.0550 {restartedMain} INFO  org.apache.catalina.core.StandardService -Stopping service [Tomcat]
+2024-10-05 11:01:17.0740 {restartedMain} INFO  o.s.b.a.logging.ConditionEvaluationReportLogger -
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2024-10-05 11:01:17.0890 {restartedMain} ERROR org.springframework.boot.SpringApplication -Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Failed to initialize dependency 'dataSourceScriptDatabaseInitializer' of LoadTimeWeaverAware bean 'entityManagerFactory': Error creating bean with name 'dataSourceScriptDatabaseInitializer' defined in class path resource [org/springframework/boot/autoconfigure/sql/init/DataSourceInitializationConfiguration.class]: Unsatisfied dependency expressed through method 'dataSourceScriptDatabaseInitializer' parameter 0: Error creating bean with name 'dataSource' defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Hikari.class]: Failed to instantiate [com.zaxxer.hikari.HikariDataSource]: Factory method 'dataSource' threw exception with message: Cannot load driver class: com.mysql.jdbc.driver
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:326)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:205)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:954)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:625)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:456)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:335)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1363)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1352)
+	at com.everpower.traffic_system.TrafficSystemApplication.main(TrafficSystemApplication.java:10)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50)
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'dataSourceScriptDatabaseInitializer' defined in class path resource [org/springframework/boot/autoconfigure/sql/init/DataSourceInitializationConfiguration.class]: Unsatisfied dependency expressed through method 'dataSourceScriptDatabaseInitializer' parameter 0: Error creating bean with name 'dataSource' defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Hikari.class]: Failed to instantiate [com.zaxxer.hikari.HikariDataSource]: Factory method 'dataSource' threw exception with message: Cannot load driver class: com.mysql.jdbc.driver
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:795)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:542)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1355)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1185)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:562)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:522)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:337)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:313)
+	... 13 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Hikari.class]: Failed to instantiate [com.zaxxer.hikari.HikariDataSource]: Factory method 'dataSource' threw exception with message: Cannot load driver class: com.mysql.jdbc.driver
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:648)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:636)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1355)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1185)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:562)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:522)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:337)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:254)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1443)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1353)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:904)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:782)
+	... 23 common frames omitted
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.zaxxer.hikari.HikariDataSource]: Factory method 'dataSource' threw exception with message: Cannot load driver class: com.mysql.jdbc.driver
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:178)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:644)
+	... 37 common frames omitted
+Caused by: java.lang.IllegalStateException: Cannot load driver class: com.mysql.jdbc.driver
+	at org.springframework.util.Assert.state(Assert.java:97)
+	at org.springframework.boot.autoconfigure.jdbc.DataSourceProperties.determineDriverClassName(DataSourceProperties.java:175)
+	at org.springframework.boot.autoconfigure.jdbc.PropertiesJdbcConnectionDetails.getDriverClassName(PropertiesJdbcConnectionDetails.java:49)
+	at org.springframework.boot.autoconfigure.jdbc.DataSourceConfiguration.createDataSource(DataSourceConfiguration.java:55)
+	at org.springframework.boot.autoconfigure.jdbc.DataSourceConfiguration$Hikari.dataSource(DataSourceConfiguration.java:117)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:146)
+	... 38 common frames omitted
+2024-10-05 11:01:50.2340 {restartedMain} INFO  c.e.traffic_system.TrafficSystemApplication -Starting TrafficSystemApplication using Java 21.0.4 with PID 1190420 (/home/ym/traffic-master/traffic-system/target/classes started by root in /home/ym/traffic-master)
+2024-10-05 11:01:50.2360 {restartedMain} INFO  c.e.traffic_system.TrafficSystemApplication -The following 1 profile is active: "dev"
+2024-10-05 11:01:50.2870 {restartedMain} INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor -Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-10-05 11:01:50.2870 {restartedMain} INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor -For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-10-05 11:01:50.9990 {restartedMain} INFO  o.s.d.r.config.RepositoryConfigurationDelegate -Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-10-05 11:01:51.0410 {restartedMain} INFO  o.s.d.r.config.RepositoryConfigurationDelegate -Finished Spring Data repository scanning in 36 ms. Found 1 JPA repository interface.
+2024-10-05 11:01:51.4990 {restartedMain} INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer -Tomcat initialized with port 8080 (http)
+2024-10-05 11:01:51.5190 {restartedMain} INFO  org.apache.coyote.http11.Http11NioProtocol -Initializing ProtocolHandler ["http-nio-8080"]
+2024-10-05 11:01:51.5240 {restartedMain} INFO  org.apache.catalina.core.StandardService -Starting service [Tomcat]
+2024-10-05 11:01:51.5250 {restartedMain} INFO  org.apache.catalina.core.StandardEngine -Starting Servlet engine: [Apache Tomcat/10.1.30]
+2024-10-05 11:01:51.5670 {restartedMain} INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] -Initializing Spring embedded WebApplicationContext
+2024-10-05 11:01:51.5690 {restartedMain} INFO  o.s.b.w.s.c.ServletWebServerApplicationContext -Root WebApplicationContext: initialization completed in 1281 ms
+2024-10-05 11:01:51.6880 {restartedMain} INFO  com.zaxxer.hikari.HikariDataSource -HikariPool-1 - Starting...
+2024-10-05 11:01:51.6920 {restartedMain} WARN  com.zaxxer.hikari.util.DriverDataSource -Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2024-10-05 11:01:51.9840 {restartedMain} INFO  com.zaxxer.hikari.pool.HikariPool -HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@229b5b8a
+2024-10-05 11:01:51.9860 {restartedMain} INFO  com.zaxxer.hikari.HikariDataSource -HikariPool-1 - Start completed.
+2024-10-05 11:01:52.0170 {restartedMain} INFO  org.hibernate.jpa.internal.util.LogHelper -HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-10-05 11:01:52.0500 {restartedMain} INFO  org.hibernate.Version -HHH000412: Hibernate ORM core version 6.5.3.Final
+2024-10-05 11:01:52.0720 {restartedMain} INFO  o.hibernate.cache.internal.RegionFactoryInitiator -HHH000026: Second-level cache disabled
+2024-10-05 11:01:52.3220 {restartedMain} INFO  o.s.o.j.persistenceunit.SpringPersistenceUnitInfo -No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-10-05 11:01:52.4810 {restartedMain} ERROR o.s.orm.jpa.LocalContainerEntityManagerFactoryBean -Failed to initialize JPA EntityManagerFactory: Entity 'com.everpower.traffic_system.info.UserInfo' has no identifier (every '@Entity' class must declare or inherit at least one '@Id' or '@EmbeddedId' property)
+2024-10-05 11:01:52.4810 {restartedMain} WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext -Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Entity 'com.everpower.traffic_system.info.UserInfo' has no identifier (every '@Entity' class must declare or inherit at least one '@Id' or '@EmbeddedId' property)
+2024-10-05 11:01:52.4830 {restartedMain} INFO  com.zaxxer.hikari.HikariDataSource -HikariPool-1 - Shutdown initiated...
+2024-10-05 11:01:52.4940 {restartedMain} INFO  com.zaxxer.hikari.HikariDataSource -HikariPool-1 - Shutdown completed.
+2024-10-05 11:01:52.4960 {restartedMain} INFO  org.apache.catalina.core.StandardService -Stopping service [Tomcat]
+2024-10-05 11:01:52.5090 {restartedMain} INFO  o.s.b.a.logging.ConditionEvaluationReportLogger -
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2024-10-05 11:01:52.5250 {restartedMain} ERROR org.springframework.boot.SpringApplication -Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Entity 'com.everpower.traffic_system.info.UserInfo' has no identifier (every '@Entity' class must declare or inherit at least one '@Id' or '@EmbeddedId' property)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1806)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:600)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:522)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:337)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:205)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:954)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:625)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:456)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:335)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1363)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1352)
+	at com.everpower.traffic_system.TrafficSystemApplication.main(TrafficSystemApplication.java:10)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50)
+Caused by: org.hibernate.AnnotationException: Entity 'com.everpower.traffic_system.info.UserInfo' has no identifier (every '@Entity' class must declare or inherit at least one '@Id' or '@EmbeddedId' property)
+	at org.hibernate.boot.model.internal.InheritanceState.determineDefaultAccessType(InheritanceState.java:279)
+	at org.hibernate.boot.model.internal.InheritanceState.getElementsToProcess(InheritanceState.java:215)
+	at org.hibernate.boot.model.internal.InheritanceState.postProcess(InheritanceState.java:160)
+	at org.hibernate.boot.model.internal.EntityBinder.handleIdentifier(EntityBinder.java:407)
+	at org.hibernate.boot.model.internal.EntityBinder.bindEntityClass(EntityBinder.java:248)
+	at org.hibernate.boot.model.internal.AnnotationBinder.bindClass(AnnotationBinder.java:399)
+	at org.hibernate.boot.model.source.internal.annotations.AnnotationMetadataSourceProcessorImpl.processEntityHierarchies(AnnotationMetadataSourceProcessorImpl.java:259)
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess$1.processEntityHierarchies(MetadataBuildingProcess.java:281)
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.complete(MetadataBuildingProcess.java:324)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.metadata(EntityManagerFactoryBuilderImpl.java:1431)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1502)
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:75)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:390)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:409)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:396)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:366)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1853)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1802)
+	... 18 common frames omitted
+2024-10-05 11:16:59.6720 {restartedMain} INFO  c.e.traffic_system.TrafficSystemApplication -Starting TrafficSystemApplication using Java 21.0.4 with PID 1194755 (/home/ym/traffic-master/traffic-system/target/classes started by root in /home/ym/traffic-master)
+2024-10-05 11:16:59.6730 {restartedMain} INFO  c.e.traffic_system.TrafficSystemApplication -The following 1 profile is active: "dev"
+2024-10-05 11:16:59.7280 {restartedMain} INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor -Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-10-05 11:16:59.7290 {restartedMain} INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor -For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-10-05 11:17:00.4040 {restartedMain} INFO  o.s.d.r.config.RepositoryConfigurationDelegate -Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-10-05 11:17:00.4540 {restartedMain} INFO  o.s.d.r.config.RepositoryConfigurationDelegate -Finished Spring Data repository scanning in 42 ms. Found 1 JPA repository interface.
+2024-10-05 11:17:00.9660 {restartedMain} INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer -Tomcat initialized with port 8080 (http)
+2024-10-05 11:17:00.9750 {restartedMain} INFO  org.apache.coyote.http11.Http11NioProtocol -Initializing ProtocolHandler ["http-nio-8080"]
+2024-10-05 11:17:00.9790 {restartedMain} INFO  org.apache.catalina.core.StandardService -Starting service [Tomcat]
+2024-10-05 11:17:00.9790 {restartedMain} INFO  org.apache.catalina.core.StandardEngine -Starting Servlet engine: [Apache Tomcat/10.1.30]
+2024-10-05 11:17:01.0180 {restartedMain} INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] -Initializing Spring embedded WebApplicationContext
+2024-10-05 11:17:01.0190 {restartedMain} INFO  o.s.b.w.s.c.ServletWebServerApplicationContext -Root WebApplicationContext: initialization completed in 1289 ms
+2024-10-05 11:17:01.1410 {restartedMain} INFO  com.zaxxer.hikari.HikariDataSource -HikariPool-1 - Starting...
+2024-10-05 11:17:01.5180 {restartedMain} INFO  com.zaxxer.hikari.pool.HikariPool -HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@14634d2e
+2024-10-05 11:17:01.5200 {restartedMain} INFO  com.zaxxer.hikari.HikariDataSource -HikariPool-1 - Start completed.
+2024-10-05 11:17:01.5560 {restartedMain} INFO  org.hibernate.jpa.internal.util.LogHelper -HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-10-05 11:17:01.5920 {restartedMain} INFO  org.hibernate.Version -HHH000412: Hibernate ORM core version 6.5.3.Final
+2024-10-05 11:17:01.6160 {restartedMain} INFO  o.hibernate.cache.internal.RegionFactoryInitiator -HHH000026: Second-level cache disabled
+2024-10-05 11:17:01.8680 {restartedMain} INFO  o.s.o.j.persistenceunit.SpringPersistenceUnitInfo -No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-10-05 11:17:02.0160 {restartedMain} ERROR o.s.orm.jpa.LocalContainerEntityManagerFactoryBean -Failed to initialize JPA EntityManagerFactory: Entity 'com.everpower.traffic_system.info.UserInfo' has no identifier (every '@Entity' class must declare or inherit at least one '@Id' or '@EmbeddedId' property)
+2024-10-05 11:17:02.0180 {restartedMain} WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext -Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Entity 'com.everpower.traffic_system.info.UserInfo' has no identifier (every '@Entity' class must declare or inherit at least one '@Id' or '@EmbeddedId' property)
+2024-10-05 11:17:02.0190 {restartedMain} INFO  com.zaxxer.hikari.HikariDataSource -HikariPool-1 - Shutdown initiated...
+2024-10-05 11:17:02.0290 {restartedMain} INFO  com.zaxxer.hikari.HikariDataSource -HikariPool-1 - Shutdown completed.
+2024-10-05 11:17:02.0310 {restartedMain} INFO  org.apache.catalina.core.StandardService -Stopping service [Tomcat]
+2024-10-05 11:17:02.0470 {restartedMain} INFO  o.s.b.a.logging.ConditionEvaluationReportLogger -
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2024-10-05 11:17:02.0620 {restartedMain} ERROR org.springframework.boot.SpringApplication -Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Entity 'com.everpower.traffic_system.info.UserInfo' has no identifier (every '@Entity' class must declare or inherit at least one '@Id' or '@EmbeddedId' property)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1806)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:600)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:522)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:337)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:205)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:954)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:625)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:456)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:335)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1363)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1352)
+	at com.everpower.traffic_system.TrafficSystemApplication.main(TrafficSystemApplication.java:10)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50)
+Caused by: org.hibernate.AnnotationException: Entity 'com.everpower.traffic_system.info.UserInfo' has no identifier (every '@Entity' class must declare or inherit at least one '@Id' or '@EmbeddedId' property)
+	at org.hibernate.boot.model.internal.InheritanceState.determineDefaultAccessType(InheritanceState.java:279)
+	at org.hibernate.boot.model.internal.InheritanceState.getElementsToProcess(InheritanceState.java:215)
+	at org.hibernate.boot.model.internal.InheritanceState.postProcess(InheritanceState.java:160)
+	at org.hibernate.boot.model.internal.EntityBinder.handleIdentifier(EntityBinder.java:407)
+	at org.hibernate.boot.model.internal.EntityBinder.bindEntityClass(EntityBinder.java:248)
+	at org.hibernate.boot.model.internal.AnnotationBinder.bindClass(AnnotationBinder.java:399)
+	at org.hibernate.boot.model.source.internal.annotations.AnnotationMetadataSourceProcessorImpl.processEntityHierarchies(AnnotationMetadataSourceProcessorImpl.java:259)
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess$1.processEntityHierarchies(MetadataBuildingProcess.java:281)
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.complete(MetadataBuildingProcess.java:324)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.metadata(EntityManagerFactoryBuilderImpl.java:1431)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1502)
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:75)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:390)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:409)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:396)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:366)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1853)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1802)
+	... 18 common frames omitted
+2024-10-05 21:49:59.2520 {restartedMain} INFO  c.e.traffic_system.TrafficSystemApplication -Starting TrafficSystemApplication using Java 21.0.4 with PID 1215067 (/home/ym/traffic-master/traffic-system/target/classes started by root in /home/ym/traffic-master)
+2024-10-05 21:49:59.2540 {restartedMain} INFO  c.e.traffic_system.TrafficSystemApplication -The following 1 profile is active: "dev"
+2024-10-05 21:49:59.3180 {restartedMain} INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor -Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-10-05 21:49:59.3190 {restartedMain} INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor -For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-10-05 21:50:00.0380 {restartedMain} INFO  o.s.d.r.config.RepositoryConfigurationDelegate -Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-10-05 21:50:00.1170 {restartedMain} INFO  o.s.d.r.config.RepositoryConfigurationDelegate -Finished Spring Data repository scanning in 69 ms. Found 1 JPA repository interface.
+2024-10-05 21:50:00.7670 {restartedMain} INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer -Tomcat initialized with port 8080 (http)
+2024-10-05 21:50:00.7790 {restartedMain} INFO  org.apache.coyote.http11.Http11NioProtocol -Initializing ProtocolHandler ["http-nio-8080"]
+2024-10-05 21:50:00.7820 {restartedMain} INFO  org.apache.catalina.core.StandardService -Starting service [Tomcat]
+2024-10-05 21:50:00.7830 {restartedMain} INFO  org.apache.catalina.core.StandardEngine -Starting Servlet engine: [Apache Tomcat/10.1.30]
+2024-10-05 21:50:00.8270 {restartedMain} INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] -Initializing Spring embedded WebApplicationContext
+2024-10-05 21:50:00.8290 {restartedMain} INFO  o.s.b.w.s.c.ServletWebServerApplicationContext -Root WebApplicationContext: initialization completed in 1509 ms
+2024-10-05 21:50:00.9660 {restartedMain} INFO  com.zaxxer.hikari.HikariDataSource -HikariPool-1 - Starting...
+2024-10-05 21:50:01.3560 {restartedMain} INFO  com.zaxxer.hikari.pool.HikariPool -HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@db9f2f8
+2024-10-05 21:50:01.3580 {restartedMain} INFO  com.zaxxer.hikari.HikariDataSource -HikariPool-1 - Start completed.
+2024-10-05 21:50:01.4060 {restartedMain} INFO  org.hibernate.jpa.internal.util.LogHelper -HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-10-05 21:50:01.4550 {restartedMain} INFO  org.hibernate.Version -HHH000412: Hibernate ORM core version 6.5.3.Final
+2024-10-05 21:50:01.4860 {restartedMain} INFO  o.hibernate.cache.internal.RegionFactoryInitiator -HHH000026: Second-level cache disabled
+2024-10-05 21:50:01.7620 {restartedMain} INFO  o.s.o.j.persistenceunit.SpringPersistenceUnitInfo -No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-10-05 21:50:01.9380 {restartedMain} ERROR o.s.orm.jpa.LocalContainerEntityManagerFactoryBean -Failed to initialize JPA EntityManagerFactory: Entity 'com.everpower.traffic_system.info.UserInfo' has no identifier (every '@Entity' class must declare or inherit at least one '@Id' or '@EmbeddedId' property)
+2024-10-05 21:50:01.9400 {restartedMain} WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext -Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Entity 'com.everpower.traffic_system.info.UserInfo' has no identifier (every '@Entity' class must declare or inherit at least one '@Id' or '@EmbeddedId' property)
+2024-10-05 21:50:01.9420 {restartedMain} INFO  com.zaxxer.hikari.HikariDataSource -HikariPool-1 - Shutdown initiated...
+2024-10-05 21:50:01.9740 {restartedMain} INFO  com.zaxxer.hikari.HikariDataSource -HikariPool-1 - Shutdown completed.
+2024-10-05 21:50:01.9770 {restartedMain} INFO  org.apache.catalina.core.StandardService -Stopping service [Tomcat]
+2024-10-05 21:50:01.9940 {restartedMain} INFO  o.s.b.a.logging.ConditionEvaluationReportLogger -
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2024-10-05 21:50:02.0150 {restartedMain} ERROR org.springframework.boot.SpringApplication -Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Entity 'com.everpower.traffic_system.info.UserInfo' has no identifier (every '@Entity' class must declare or inherit at least one '@Id' or '@EmbeddedId' property)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1806)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:600)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:522)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:337)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:205)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:954)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:625)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:456)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:335)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1363)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1352)
+	at com.everpower.traffic_system.TrafficSystemApplication.main(TrafficSystemApplication.java:10)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50)
+Caused by: org.hibernate.AnnotationException: Entity 'com.everpower.traffic_system.info.UserInfo' has no identifier (every '@Entity' class must declare or inherit at least one '@Id' or '@EmbeddedId' property)
+	at org.hibernate.boot.model.internal.InheritanceState.determineDefaultAccessType(InheritanceState.java:279)
+	at org.hibernate.boot.model.internal.InheritanceState.getElementsToProcess(InheritanceState.java:215)
+	at org.hibernate.boot.model.internal.InheritanceState.postProcess(InheritanceState.java:160)
+	at org.hibernate.boot.model.internal.EntityBinder.handleIdentifier(EntityBinder.java:407)
+	at org.hibernate.boot.model.internal.EntityBinder.bindEntityClass(EntityBinder.java:248)
+	at org.hibernate.boot.model.internal.AnnotationBinder.bindClass(AnnotationBinder.java:399)
+	at org.hibernate.boot.model.source.internal.annotations.AnnotationMetadataSourceProcessorImpl.processEntityHierarchies(AnnotationMetadataSourceProcessorImpl.java:259)
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess$1.processEntityHierarchies(MetadataBuildingProcess.java:281)
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.complete(MetadataBuildingProcess.java:324)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.metadata(EntityManagerFactoryBuilderImpl.java:1431)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1502)
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:75)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:390)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:409)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:396)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:366)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1853)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1802)
+	... 18 common frames omitted
+2024-10-05 21:54:29.9210 {restartedMain} INFO  com.everpower.traffic_web.TrafficWebApplication -Starting TrafficWebApplication using Java 21.0.4 with PID 1216629 (/home/ym/traffic-master/traffic-web/target/classes started by root in /home/ym/traffic-master)
+2024-10-05 21:54:29.9230 {restartedMain} INFO  com.everpower.traffic_web.TrafficWebApplication -The following 1 profile is active: "dev"
+2024-10-05 21:54:30.0040 {restartedMain} INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor -Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-10-05 21:54:30.0050 {restartedMain} INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor -For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-10-05 21:54:31.0270 {restartedMain} INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer -Tomcat initialized with port 8080 (http)
+2024-10-05 21:54:31.0390 {restartedMain} INFO  org.apache.coyote.http11.Http11NioProtocol -Initializing ProtocolHandler ["http-nio-8080"]
+2024-10-05 21:54:31.0440 {restartedMain} INFO  org.apache.catalina.core.StandardService -Starting service [Tomcat]
+2024-10-05 21:54:31.0440 {restartedMain} INFO  org.apache.catalina.core.StandardEngine -Starting Servlet engine: [Apache Tomcat/10.1.30]
+2024-10-05 21:54:31.0770 {restartedMain} INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] -Initializing Spring embedded WebApplicationContext
+2024-10-05 21:54:31.0780 {restartedMain} INFO  o.s.b.w.s.c.ServletWebServerApplicationContext -Root WebApplicationContext: initialization completed in 1072 ms
+2024-10-05 21:54:31.3630 {restartedMain} WARN  o.s.b.a.t.ThymeleafAutoConfiguration$DefaultTemplateResolverConfiguration -Cannot find template location: classpath:/templates/ (please add some templates, check your Thymeleaf configuration, or set spring.thymeleaf.check-template-location=false)
+2024-10-05 21:54:31.4060 {restartedMain} INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer -LiveReload server is running on port 35729
+2024-10-05 21:54:31.4210 {restartedMain} INFO  org.apache.coyote.http11.Http11NioProtocol -Starting ProtocolHandler ["http-nio-8080"]
+2024-10-05 21:54:31.4340 {restartedMain} INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer -Tomcat started on port 8080 (http) with context path '/'
+2024-10-05 21:54:31.4450 {restartedMain} INFO  com.everpower.traffic_web.TrafficWebApplication -Started TrafficWebApplication in 2.038 seconds (process running for 2.524)
+2024-10-05 21:55:11.1050 {restartedMain} INFO  c.e.traffic_system.TrafficSystemApplication -Starting TrafficSystemApplication using Java 21.0.4 with PID 1216998 (/home/ym/traffic-master/traffic-system/target/classes started by root in /home/ym/traffic-master)
+2024-10-05 21:55:11.1110 {restartedMain} INFO  c.e.traffic_system.TrafficSystemApplication -The following 1 profile is active: "dev"
+2024-10-05 21:55:11.1900 {restartedMain} INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor -Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-10-05 21:55:11.1910 {restartedMain} INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor -For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-10-05 21:55:11.9980 {restartedMain} INFO  o.s.d.r.config.RepositoryConfigurationDelegate -Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-10-05 21:55:12.0560 {restartedMain} INFO  o.s.d.r.config.RepositoryConfigurationDelegate -Finished Spring Data repository scanning in 50 ms. Found 1 JPA repository interface.
+2024-10-05 21:55:12.7010 {restartedMain} INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer -Tomcat initialized with port 8080 (http)
+2024-10-05 21:55:12.7120 {restartedMain} INFO  org.apache.coyote.http11.Http11NioProtocol -Initializing ProtocolHandler ["http-nio-8080"]
+2024-10-05 21:55:12.7150 {restartedMain} INFO  org.apache.catalina.core.StandardService -Starting service [Tomcat]
+2024-10-05 21:55:12.7160 {restartedMain} INFO  org.apache.catalina.core.StandardEngine -Starting Servlet engine: [Apache Tomcat/10.1.30]
+2024-10-05 21:55:12.7530 {restartedMain} INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] -Initializing Spring embedded WebApplicationContext
+2024-10-05 21:55:12.7550 {restartedMain} INFO  o.s.b.w.s.c.ServletWebServerApplicationContext -Root WebApplicationContext: initialization completed in 1562 ms
+2024-10-05 21:55:12.9250 {restartedMain} INFO  com.zaxxer.hikari.HikariDataSource -HikariPool-1 - Starting...
+2024-10-05 21:55:13.3510 {restartedMain} INFO  com.zaxxer.hikari.pool.HikariPool -HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@44c1c4ed
+2024-10-05 21:55:13.3560 {restartedMain} INFO  com.zaxxer.hikari.HikariDataSource -HikariPool-1 - Start completed.
+2024-10-05 21:55:13.4070 {restartedMain} INFO  org.hibernate.jpa.internal.util.LogHelper -HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-10-05 21:55:13.4560 {restartedMain} INFO  org.hibernate.Version -HHH000412: Hibernate ORM core version 6.5.3.Final
+2024-10-05 21:55:13.4960 {restartedMain} INFO  o.hibernate.cache.internal.RegionFactoryInitiator -HHH000026: Second-level cache disabled
+2024-10-05 21:55:13.7560 {restartedMain} INFO  o.s.o.j.persistenceunit.SpringPersistenceUnitInfo -No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-10-05 21:55:13.9310 {restartedMain} ERROR o.s.orm.jpa.LocalContainerEntityManagerFactoryBean -Failed to initialize JPA EntityManagerFactory: Entity 'com.everpower.traffic_system.info.UserInfo' has no identifier (every '@Entity' class must declare or inherit at least one '@Id' or '@EmbeddedId' property)
+2024-10-05 21:55:13.9320 {restartedMain} WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext -Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Entity 'com.everpower.traffic_system.info.UserInfo' has no identifier (every '@Entity' class must declare or inherit at least one '@Id' or '@EmbeddedId' property)
+2024-10-05 21:55:13.9340 {restartedMain} INFO  com.zaxxer.hikari.HikariDataSource -HikariPool-1 - Shutdown initiated...
+2024-10-05 21:55:13.9810 {restartedMain} INFO  com.zaxxer.hikari.HikariDataSource -HikariPool-1 - Shutdown completed.
+2024-10-05 21:55:13.9840 {restartedMain} INFO  org.apache.catalina.core.StandardService -Stopping service [Tomcat]
+2024-10-05 21:55:14.0000 {restartedMain} INFO  o.s.b.a.logging.ConditionEvaluationReportLogger -
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2024-10-05 21:55:14.0190 {restartedMain} ERROR org.springframework.boot.SpringApplication -Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Entity 'com.everpower.traffic_system.info.UserInfo' has no identifier (every '@Entity' class must declare or inherit at least one '@Id' or '@EmbeddedId' property)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1806)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:600)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:522)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:337)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:205)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:954)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:625)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:456)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:335)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1363)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1352)
+	at com.everpower.traffic_system.TrafficSystemApplication.main(TrafficSystemApplication.java:10)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50)
+Caused by: org.hibernate.AnnotationException: Entity 'com.everpower.traffic_system.info.UserInfo' has no identifier (every '@Entity' class must declare or inherit at least one '@Id' or '@EmbeddedId' property)
+	at org.hibernate.boot.model.internal.InheritanceState.determineDefaultAccessType(InheritanceState.java:279)
+	at org.hibernate.boot.model.internal.InheritanceState.getElementsToProcess(InheritanceState.java:215)
+	at org.hibernate.boot.model.internal.InheritanceState.postProcess(InheritanceState.java:160)
+	at org.hibernate.boot.model.internal.EntityBinder.handleIdentifier(EntityBinder.java:407)
+	at org.hibernate.boot.model.internal.EntityBinder.bindEntityClass(EntityBinder.java:248)
+	at org.hibernate.boot.model.internal.AnnotationBinder.bindClass(AnnotationBinder.java:399)
+	at org.hibernate.boot.model.source.internal.annotations.AnnotationMetadataSourceProcessorImpl.processEntityHierarchies(AnnotationMetadataSourceProcessorImpl.java:259)
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess$1.processEntityHierarchies(MetadataBuildingProcess.java:281)
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.complete(MetadataBuildingProcess.java:324)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.metadata(EntityManagerFactoryBuilderImpl.java:1431)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1502)
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:75)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:390)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:409)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:396)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:366)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1853)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1802)
+	... 18 common frames omitted
+2024-10-05 22:01:16.6110 {restartedMain} INFO  c.e.traffic_system.TrafficSystemApplication -Starting TrafficSystemApplication using Java 21.0.4 with PID 1218985 (/home/ym/traffic-master/traffic-system/target/classes started by root in /home/ym/traffic-master)
+2024-10-05 22:01:16.6180 {restartedMain} INFO  c.e.traffic_system.TrafficSystemApplication -The following 1 profile is active: "dev"
+2024-10-05 22:01:16.6770 {restartedMain} INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor -Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-10-05 22:01:16.6780 {restartedMain} INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor -For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-10-05 22:01:17.3770 {restartedMain} INFO  o.s.d.r.config.RepositoryConfigurationDelegate -Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-10-05 22:01:17.4260 {restartedMain} INFO  o.s.d.r.config.RepositoryConfigurationDelegate -Finished Spring Data repository scanning in 42 ms. Found 1 JPA repository interface.
+2024-10-05 22:01:17.9220 {restartedMain} INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer -Tomcat initialized with port 8080 (http)
+2024-10-05 22:01:17.9340 {restartedMain} INFO  org.apache.coyote.http11.Http11NioProtocol -Initializing ProtocolHandler ["http-nio-8080"]
+2024-10-05 22:01:17.9380 {restartedMain} INFO  org.apache.catalina.core.StandardService -Starting service [Tomcat]
+2024-10-05 22:01:17.9400 {restartedMain} INFO  org.apache.catalina.core.StandardEngine -Starting Servlet engine: [Apache Tomcat/10.1.30]
+2024-10-05 22:01:17.9790 {restartedMain} INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] -Initializing Spring embedded WebApplicationContext
+2024-10-05 22:01:17.9880 {restartedMain} INFO  o.s.b.w.s.c.ServletWebServerApplicationContext -Root WebApplicationContext: initialization completed in 1302 ms
+2024-10-05 22:01:18.1170 {restartedMain} INFO  com.zaxxer.hikari.HikariDataSource -HikariPool-1 - Starting...
+2024-10-05 22:01:18.4580 {restartedMain} INFO  com.zaxxer.hikari.pool.HikariPool -HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@75239683
+2024-10-05 22:01:18.4610 {restartedMain} INFO  com.zaxxer.hikari.HikariDataSource -HikariPool-1 - Start completed.
+2024-10-05 22:01:18.5000 {restartedMain} INFO  org.hibernate.jpa.internal.util.LogHelper -HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-10-05 22:01:18.5380 {restartedMain} INFO  org.hibernate.Version -HHH000412: Hibernate ORM core version 6.5.3.Final
+2024-10-05 22:01:18.5620 {restartedMain} INFO  o.hibernate.cache.internal.RegionFactoryInitiator -HHH000026: Second-level cache disabled
+2024-10-05 22:01:18.8460 {restartedMain} INFO  o.s.o.j.persistenceunit.SpringPersistenceUnitInfo -No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-10-05 22:01:19.0220 {restartedMain} ERROR o.s.orm.jpa.LocalContainerEntityManagerFactoryBean -Failed to initialize JPA EntityManagerFactory: Entity 'com.everpower.traffic_system.info.UserInfo' has no identifier (every '@Entity' class must declare or inherit at least one '@Id' or '@EmbeddedId' property)
+2024-10-05 22:01:19.0230 {restartedMain} WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext -Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Entity 'com.everpower.traffic_system.info.UserInfo' has no identifier (every '@Entity' class must declare or inherit at least one '@Id' or '@EmbeddedId' property)
+2024-10-05 22:01:19.0240 {restartedMain} INFO  com.zaxxer.hikari.HikariDataSource -HikariPool-1 - Shutdown initiated...
+2024-10-05 22:01:19.0400 {restartedMain} INFO  com.zaxxer.hikari.HikariDataSource -HikariPool-1 - Shutdown completed.
+2024-10-05 22:01:19.0430 {restartedMain} INFO  org.apache.catalina.core.StandardService -Stopping service [Tomcat]
+2024-10-05 22:01:19.0570 {restartedMain} INFO  o.s.b.a.logging.ConditionEvaluationReportLogger -
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2024-10-05 22:01:19.0750 {restartedMain} ERROR org.springframework.boot.SpringApplication -Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Entity 'com.everpower.traffic_system.info.UserInfo' has no identifier (every '@Entity' class must declare or inherit at least one '@Id' or '@EmbeddedId' property)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1806)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:600)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:522)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:337)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:205)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:954)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:625)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:456)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:335)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1363)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1352)
+	at com.everpower.traffic_system.TrafficSystemApplication.main(TrafficSystemApplication.java:10)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50)
+Caused by: org.hibernate.AnnotationException: Entity 'com.everpower.traffic_system.info.UserInfo' has no identifier (every '@Entity' class must declare or inherit at least one '@Id' or '@EmbeddedId' property)
+	at org.hibernate.boot.model.internal.InheritanceState.determineDefaultAccessType(InheritanceState.java:279)
+	at org.hibernate.boot.model.internal.InheritanceState.getElementsToProcess(InheritanceState.java:215)
+	at org.hibernate.boot.model.internal.InheritanceState.postProcess(InheritanceState.java:160)
+	at org.hibernate.boot.model.internal.EntityBinder.handleIdentifier(EntityBinder.java:407)
+	at org.hibernate.boot.model.internal.EntityBinder.bindEntityClass(EntityBinder.java:248)
+	at org.hibernate.boot.model.internal.AnnotationBinder.bindClass(AnnotationBinder.java:399)
+	at org.hibernate.boot.model.source.internal.annotations.AnnotationMetadataSourceProcessorImpl.processEntityHierarchies(AnnotationMetadataSourceProcessorImpl.java:259)
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess$1.processEntityHierarchies(MetadataBuildingProcess.java:281)
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.complete(MetadataBuildingProcess.java:324)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.metadata(EntityManagerFactoryBuilderImpl.java:1431)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1502)
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:75)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:390)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:409)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:396)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:366)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1853)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1802)
+	... 18 common frames omitted
+2024-10-05 22:02:24.8610 {restartedMain} INFO  c.e.traffic_system.TrafficSystemApplication -Starting TrafficSystemApplication using Java 21.0.4 with PID 1219406 (/home/ym/traffic-master/traffic-system/target/classes started by root in /home/ym/traffic-master)
+2024-10-05 22:02:24.8630 {restartedMain} INFO  c.e.traffic_system.TrafficSystemApplication -The following 1 profile is active: "dev"
+2024-10-05 22:02:24.9290 {restartedMain} INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor -Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-10-05 22:02:24.9300 {restartedMain} INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor -For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-10-05 22:02:25.7120 {restartedMain} INFO  o.s.d.r.config.RepositoryConfigurationDelegate -Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-10-05 22:02:25.7710 {restartedMain} INFO  o.s.d.r.config.RepositoryConfigurationDelegate -Finished Spring Data repository scanning in 50 ms. Found 1 JPA repository interface.
+2024-10-05 22:02:26.3110 {restartedMain} INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer -Tomcat initialized with port 8080 (http)
+2024-10-05 22:02:26.3200 {restartedMain} INFO  org.apache.coyote.http11.Http11NioProtocol -Initializing ProtocolHandler ["http-nio-8080"]
+2024-10-05 22:02:26.3240 {restartedMain} INFO  org.apache.catalina.core.StandardService -Starting service [Tomcat]
+2024-10-05 22:02:26.3240 {restartedMain} INFO  org.apache.catalina.core.StandardEngine -Starting Servlet engine: [Apache Tomcat/10.1.30]
+2024-10-05 22:02:26.3660 {restartedMain} INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] -Initializing Spring embedded WebApplicationContext
+2024-10-05 22:02:26.3670 {restartedMain} INFO  o.s.b.w.s.c.ServletWebServerApplicationContext -Root WebApplicationContext: initialization completed in 1436 ms
+2024-10-05 22:02:26.4930 {restartedMain} INFO  com.zaxxer.hikari.HikariDataSource -HikariPool-1 - Starting...
+2024-10-05 22:02:26.8600 {restartedMain} INFO  com.zaxxer.hikari.pool.HikariPool -HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@65b1cd61
+2024-10-05 22:02:26.8620 {restartedMain} INFO  com.zaxxer.hikari.HikariDataSource -HikariPool-1 - Start completed.
+2024-10-05 22:02:26.9090 {restartedMain} INFO  org.hibernate.jpa.internal.util.LogHelper -HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-10-05 22:02:26.9550 {restartedMain} INFO  org.hibernate.Version -HHH000412: Hibernate ORM core version 6.5.3.Final
+2024-10-05 22:02:26.9920 {restartedMain} INFO  o.hibernate.cache.internal.RegionFactoryInitiator -HHH000026: Second-level cache disabled
+2024-10-05 22:02:27.2470 {restartedMain} INFO  o.s.o.j.persistenceunit.SpringPersistenceUnitInfo -No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-10-05 22:02:27.4160 {restartedMain} ERROR o.s.orm.jpa.LocalContainerEntityManagerFactoryBean -Failed to initialize JPA EntityManagerFactory: Entity 'com.everpower.traffic_system.info.UserInfo' has no identifier (every '@Entity' class must declare or inherit at least one '@Id' or '@EmbeddedId' property)
+2024-10-05 22:02:27.4170 {restartedMain} WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext -Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Entity 'com.everpower.traffic_system.info.UserInfo' has no identifier (every '@Entity' class must declare or inherit at least one '@Id' or '@EmbeddedId' property)
+2024-10-05 22:02:27.4180 {restartedMain} INFO  com.zaxxer.hikari.HikariDataSource -HikariPool-1 - Shutdown initiated...
+2024-10-05 22:02:27.4410 {restartedMain} INFO  com.zaxxer.hikari.HikariDataSource -HikariPool-1 - Shutdown completed.
+2024-10-05 22:02:27.4430 {restartedMain} INFO  org.apache.catalina.core.StandardService -Stopping service [Tomcat]
+2024-10-05 22:02:27.4550 {restartedMain} INFO  o.s.b.a.logging.ConditionEvaluationReportLogger -
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2024-10-05 22:02:27.4720 {restartedMain} ERROR org.springframework.boot.SpringApplication -Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Entity 'com.everpower.traffic_system.info.UserInfo' has no identifier (every '@Entity' class must declare or inherit at least one '@Id' or '@EmbeddedId' property)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1806)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:600)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:522)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:337)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:205)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:954)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:625)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:456)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:335)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1363)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1352)
+	at com.everpower.traffic_system.TrafficSystemApplication.main(TrafficSystemApplication.java:10)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50)
+Caused by: org.hibernate.AnnotationException: Entity 'com.everpower.traffic_system.info.UserInfo' has no identifier (every '@Entity' class must declare or inherit at least one '@Id' or '@EmbeddedId' property)
+	at org.hibernate.boot.model.internal.InheritanceState.determineDefaultAccessType(InheritanceState.java:279)
+	at org.hibernate.boot.model.internal.InheritanceState.getElementsToProcess(InheritanceState.java:215)
+	at org.hibernate.boot.model.internal.InheritanceState.postProcess(InheritanceState.java:160)
+	at org.hibernate.boot.model.internal.EntityBinder.handleIdentifier(EntityBinder.java:407)
+	at org.hibernate.boot.model.internal.EntityBinder.bindEntityClass(EntityBinder.java:248)
+	at org.hibernate.boot.model.internal.AnnotationBinder.bindClass(AnnotationBinder.java:399)
+	at org.hibernate.boot.model.source.internal.annotations.AnnotationMetadataSourceProcessorImpl.processEntityHierarchies(AnnotationMetadataSourceProcessorImpl.java:259)
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess$1.processEntityHierarchies(MetadataBuildingProcess.java:281)
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.complete(MetadataBuildingProcess.java:324)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.metadata(EntityManagerFactoryBuilderImpl.java:1431)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1502)
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:75)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:390)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:409)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:396)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:366)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1853)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1802)
+	... 18 common frames omitted
+2024-10-05 22:07:02.0160 {restartedMain} INFO  c.e.traffic_system.TrafficSystemApplication -Starting TrafficSystemApplication using Java 21.0.4 with PID 1220892 (/home/ym/traffic-master/traffic-system/target/classes started by root in /home/ym/traffic-master)
+2024-10-05 22:07:02.0180 {restartedMain} INFO  c.e.traffic_system.TrafficSystemApplication -The following 1 profile is active: "dev"
+2024-10-05 22:07:02.0640 {restartedMain} INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor -Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-10-05 22:07:02.0640 {restartedMain} INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor -For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-10-05 22:07:02.7300 {restartedMain} INFO  o.s.d.r.config.RepositoryConfigurationDelegate -Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-10-05 22:07:02.7920 {restartedMain} INFO  o.s.d.r.config.RepositoryConfigurationDelegate -Finished Spring Data repository scanning in 52 ms. Found 1 JPA repository interface.
+2024-10-05 22:07:03.3340 {restartedMain} INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer -Tomcat initialized with port 8080 (http)
+2024-10-05 22:07:03.3470 {restartedMain} INFO  org.apache.coyote.http11.Http11NioProtocol -Initializing ProtocolHandler ["http-nio-8080"]
+2024-10-05 22:07:03.3520 {restartedMain} INFO  org.apache.catalina.core.StandardService -Starting service [Tomcat]
+2024-10-05 22:07:03.3520 {restartedMain} INFO  org.apache.catalina.core.StandardEngine -Starting Servlet engine: [Apache Tomcat/10.1.30]
+2024-10-05 22:07:03.3940 {restartedMain} INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] -Initializing Spring embedded WebApplicationContext
+2024-10-05 22:07:03.3960 {restartedMain} INFO  o.s.b.w.s.c.ServletWebServerApplicationContext -Root WebApplicationContext: initialization completed in 1330 ms
+2024-10-05 22:07:03.5080 {restartedMain} INFO  com.zaxxer.hikari.HikariDataSource -HikariPool-1 - Starting...
+2024-10-05 22:07:03.8420 {restartedMain} INFO  com.zaxxer.hikari.pool.HikariPool -HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@5a5b7b91
+2024-10-05 22:07:03.8440 {restartedMain} INFO  com.zaxxer.hikari.HikariDataSource -HikariPool-1 - Start completed.
+2024-10-05 22:07:03.8790 {restartedMain} INFO  org.hibernate.jpa.internal.util.LogHelper -HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-10-05 22:07:03.9150 {restartedMain} INFO  org.hibernate.Version -HHH000412: Hibernate ORM core version 6.5.3.Final
+2024-10-05 22:07:03.9380 {restartedMain} INFO  o.hibernate.cache.internal.RegionFactoryInitiator -HHH000026: Second-level cache disabled
+2024-10-05 22:07:04.2140 {restartedMain} INFO  o.s.o.j.persistenceunit.SpringPersistenceUnitInfo -No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-10-05 22:07:04.9140 {restartedMain} INFO  o.h.e.t.jta.platform.internal.JtaPlatformInitiator -HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-10-05 22:07:04.9160 {restartedMain} INFO  o.s.orm.jpa.LocalContainerEntityManagerFactoryBean -Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-10-05 22:07:04.9830 {restartedMain} WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration -spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-10-05 22:07:05.3510 {restartedMain} WARN  o.s.b.a.t.ThymeleafAutoConfiguration$DefaultTemplateResolverConfiguration -Cannot find template location: classpath:/templates/ (please add some templates, check your Thymeleaf configuration, or set spring.thymeleaf.check-template-location=false)
+2024-10-05 22:07:05.6370 {restartedMain} INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer -LiveReload server is running on port 35729
+2024-10-05 22:07:05.6530 {restartedMain} INFO  org.apache.coyote.http11.Http11NioProtocol -Starting ProtocolHandler ["http-nio-8080"]
+2024-10-05 22:07:05.6740 {restartedMain} INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer -Tomcat started on port 8080 (http) with context path '/'
+2024-10-05 22:07:05.6880 {restartedMain} INFO  c.e.traffic_system.TrafficSystemApplication -Started TrafficSystemApplication in 4.221 seconds (process running for 4.585)
+2024-10-05 22:19:25.5770 {File Watcher} INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener -Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2024-10-05 22:19:25.5810 {Thread-5} INFO  org.apache.coyote.http11.Http11NioProtocol -Stopping ProtocolHandler ["http-nio-8080"]
+2024-10-05 22:19:25.5850 {Thread-5} INFO  o.s.orm.jpa.LocalContainerEntityManagerFactoryBean -Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-10-05 22:19:25.5870 {Thread-5} INFO  com.zaxxer.hikari.HikariDataSource -HikariPool-1 - Shutdown initiated...
+2024-10-05 22:19:25.5950 {Thread-5} INFO  com.zaxxer.hikari.HikariDataSource -HikariPool-1 - Shutdown completed.
+2024-10-05 22:19:25.6840 {restartedMain} INFO  c.e.traffic_system.TrafficSystemApplication -Starting TrafficSystemApplication using Java 21.0.4 with PID 1220892 (/home/ym/traffic-master/traffic-system/target/classes started by root in /home/ym/traffic-master)
+2024-10-05 22:19:25.6840 {restartedMain} INFO  c.e.traffic_system.TrafficSystemApplication -The following 1 profile is active: "dev"
+2024-10-05 22:19:25.8230 {restartedMain} INFO  o.s.d.r.config.RepositoryConfigurationDelegate -Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-10-05 22:19:25.8310 {restartedMain} INFO  o.s.d.r.config.RepositoryConfigurationDelegate -Finished Spring Data repository scanning in 7 ms. Found 1 JPA repository interface.
+2024-10-05 22:19:25.9540 {restartedMain} INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer -Tomcat initialized with port 8080 (http)
+2024-10-05 22:19:25.9560 {restartedMain} INFO  org.apache.coyote.http11.Http11NioProtocol -Initializing ProtocolHandler ["http-nio-8080"]
+2024-10-05 22:19:25.9560 {restartedMain} INFO  org.apache.catalina.core.StandardService -Starting service [Tomcat]
+2024-10-05 22:19:25.9570 {restartedMain} INFO  org.apache.catalina.core.StandardEngine -Starting Servlet engine: [Apache Tomcat/10.1.30]
+2024-10-05 22:19:25.9760 {restartedMain} INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] -Initializing Spring embedded WebApplicationContext
+2024-10-05 22:19:25.9770 {restartedMain} INFO  o.s.b.w.s.c.ServletWebServerApplicationContext -Root WebApplicationContext: initialization completed in 290 ms
+2024-10-05 22:19:26.0190 {restartedMain} INFO  com.zaxxer.hikari.HikariDataSource -HikariPool-2 - Starting...
+2024-10-05 22:19:26.0410 {restartedMain} INFO  com.zaxxer.hikari.pool.HikariPool -HikariPool-2 - Added connection com.mysql.cj.jdbc.ConnectionImpl@1e1cbe8c
+2024-10-05 22:19:26.0410 {restartedMain} INFO  com.zaxxer.hikari.HikariDataSource -HikariPool-2 - Start completed.
+2024-10-05 22:19:26.0420 {restartedMain} INFO  org.hibernate.jpa.internal.util.LogHelper -HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-10-05 22:19:26.0430 {restartedMain} INFO  o.hibernate.cache.internal.RegionFactoryInitiator -HHH000026: Second-level cache disabled
+2024-10-05 22:19:26.0520 {restartedMain} INFO  o.s.o.j.persistenceunit.SpringPersistenceUnitInfo -No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-10-05 22:19:26.1050 {restartedMain} INFO  o.h.e.t.jta.platform.internal.JtaPlatformInitiator -HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-10-05 22:19:26.1060 {restartedMain} INFO  o.s.orm.jpa.LocalContainerEntityManagerFactoryBean -Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-10-05 22:19:26.1280 {restartedMain} WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration -spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-10-05 22:19:26.2020 {restartedMain} WARN  o.s.b.a.t.ThymeleafAutoConfiguration$DefaultTemplateResolverConfiguration -Cannot find template location: classpath:/templates/ (please add some templates, check your Thymeleaf configuration, or set spring.thymeleaf.check-template-location=false)
+2024-10-05 22:19:26.2720 {restartedMain} INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer -LiveReload server is running on port 35729
+2024-10-05 22:19:26.2780 {restartedMain} INFO  org.apache.coyote.http11.Http11NioProtocol -Starting ProtocolHandler ["http-nio-8080"]
+2024-10-05 22:19:26.2840 {restartedMain} INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer -Tomcat started on port 8080 (http) with context path '/'
+2024-10-05 22:19:26.2880 {restartedMain} INFO  c.e.traffic_system.TrafficSystemApplication -Started TrafficSystemApplication in 0.644 seconds (process running for 745.185)
+2024-10-05 22:19:26.2900 {restartedMain} INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener -Condition evaluation unchanged
+2024-10-05 22:20:30.7230 {File Watcher} INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener -Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2024-10-05 22:20:30.7250 {Thread-7} INFO  org.apache.coyote.http11.Http11NioProtocol -Stopping ProtocolHandler ["http-nio-8080"]
+2024-10-05 22:20:30.7270 {Thread-7} INFO  o.s.orm.jpa.LocalContainerEntityManagerFactoryBean -Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-10-05 22:20:30.7280 {Thread-7} INFO  com.zaxxer.hikari.HikariDataSource -HikariPool-2 - Shutdown initiated...
+2024-10-05 22:20:30.7370 {Thread-7} INFO  com.zaxxer.hikari.HikariDataSource -HikariPool-2 - Shutdown completed.
+2024-10-05 22:20:30.8610 {restartedMain} INFO  c.e.traffic_system.TrafficSystemApplication -Starting TrafficSystemApplication using Java 21.0.4 with PID 1220892 (/home/ym/traffic-master/traffic-system/target/classes started by root in /home/ym/traffic-master)
+2024-10-05 22:20:30.8610 {restartedMain} INFO  c.e.traffic_system.TrafficSystemApplication -The following 1 profile is active: "dev"
+2024-10-05 22:20:31.0500 {restartedMain} INFO  o.s.d.r.config.RepositoryConfigurationDelegate -Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-10-05 22:20:31.0650 {restartedMain} INFO  o.s.d.r.config.RepositoryConfigurationDelegate -Finished Spring Data repository scanning in 15 ms. Found 1 JPA repository interface.
+2024-10-05 22:20:31.1550 {restartedMain} INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer -Tomcat initialized with port 8080 (http)
+2024-10-05 22:20:31.1560 {restartedMain} INFO  org.apache.coyote.http11.Http11NioProtocol -Initializing ProtocolHandler ["http-nio-8080"]
+2024-10-05 22:20:31.1560 {restartedMain} INFO  org.apache.catalina.core.StandardService -Starting service [Tomcat]
+2024-10-05 22:20:31.1560 {restartedMain} INFO  org.apache.catalina.core.StandardEngine -Starting Servlet engine: [Apache Tomcat/10.1.30]
+2024-10-05 22:20:31.1650 {restartedMain} INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] -Initializing Spring embedded WebApplicationContext
+2024-10-05 22:20:31.1650 {restartedMain} INFO  o.s.b.w.s.c.ServletWebServerApplicationContext -Root WebApplicationContext: initialization completed in 299 ms
+2024-10-05 22:20:31.1970 {restartedMain} INFO  com.zaxxer.hikari.HikariDataSource -HikariPool-3 - Starting...
+2024-10-05 22:20:31.2150 {restartedMain} INFO  com.zaxxer.hikari.pool.HikariPool -HikariPool-3 - Added connection com.mysql.cj.jdbc.ConnectionImpl@29353792
+2024-10-05 22:20:31.2160 {restartedMain} INFO  com.zaxxer.hikari.HikariDataSource -HikariPool-3 - Start completed.
+2024-10-05 22:20:31.2170 {restartedMain} INFO  org.hibernate.jpa.internal.util.LogHelper -HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-10-05 22:20:31.2190 {restartedMain} INFO  o.hibernate.cache.internal.RegionFactoryInitiator -HHH000026: Second-level cache disabled
+2024-10-05 22:20:31.2290 {restartedMain} INFO  o.s.o.j.persistenceunit.SpringPersistenceUnitInfo -No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-10-05 22:20:31.3090 {restartedMain} INFO  o.h.e.t.jta.platform.internal.JtaPlatformInitiator -HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-10-05 22:20:31.3100 {restartedMain} INFO  o.s.orm.jpa.LocalContainerEntityManagerFactoryBean -Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-10-05 22:20:31.3390 {restartedMain} WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration -spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-10-05 22:20:31.4280 {restartedMain} WARN  o.s.b.a.t.ThymeleafAutoConfiguration$DefaultTemplateResolverConfiguration -Cannot find template location: classpath:/templates/ (please add some templates, check your Thymeleaf configuration, or set spring.thymeleaf.check-template-location=false)
+2024-10-05 22:20:31.4810 {restartedMain} INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer -LiveReload server is running on port 35729
+2024-10-05 22:20:31.4870 {restartedMain} INFO  org.apache.coyote.http11.Http11NioProtocol -Starting ProtocolHandler ["http-nio-8080"]
+2024-10-05 22:20:31.4940 {restartedMain} INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer -Tomcat started on port 8080 (http) with context path '/'
+2024-10-05 22:20:31.4980 {restartedMain} INFO  c.e.traffic_system.TrafficSystemApplication -Started TrafficSystemApplication in 0.702 seconds (process running for 810.395)
+2024-10-05 22:20:31.4990 {restartedMain} INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener -Condition evaluation unchanged
+2024-10-05 22:24:03.0370 {File Watcher} INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener -Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2024-10-05 22:24:03.0390 {Thread-11} INFO  org.apache.coyote.http11.Http11NioProtocol -Stopping ProtocolHandler ["http-nio-8080"]
+2024-10-05 22:24:03.0410 {Thread-11} INFO  o.s.orm.jpa.LocalContainerEntityManagerFactoryBean -Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-10-05 22:24:03.0420 {Thread-11} INFO  com.zaxxer.hikari.HikariDataSource -HikariPool-3 - Shutdown initiated...
+2024-10-05 22:24:03.0460 {Thread-11} INFO  com.zaxxer.hikari.HikariDataSource -HikariPool-3 - Shutdown completed.
+2024-10-05 22:24:03.1210 {restartedMain} INFO  c.e.traffic_system.TrafficSystemApplication -Starting TrafficSystemApplication using Java 21.0.4 with PID 1220892 (/home/ym/traffic-master/traffic-system/target/classes started by root in /home/ym/traffic-master)
+2024-10-05 22:24:03.1210 {restartedMain} INFO  c.e.traffic_system.TrafficSystemApplication -The following 1 profile is active: "dev"
+2024-10-05 22:24:03.2140 {restartedMain} INFO  o.s.d.r.config.RepositoryConfigurationDelegate -Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-10-05 22:24:03.2220 {restartedMain} INFO  o.s.d.r.config.RepositoryConfigurationDelegate -Finished Spring Data repository scanning in 6 ms. Found 1 JPA repository interface.
+2024-10-05 22:24:03.2920 {restartedMain} INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer -Tomcat initialized with port 8080 (http)
+2024-10-05 22:24:03.2940 {restartedMain} INFO  org.apache.coyote.http11.Http11NioProtocol -Initializing ProtocolHandler ["http-nio-8080"]
+2024-10-05 22:24:03.2940 {restartedMain} INFO  org.apache.catalina.core.StandardService -Starting service [Tomcat]
+2024-10-05 22:24:03.2950 {restartedMain} INFO  org.apache.catalina.core.StandardEngine -Starting Servlet engine: [Apache Tomcat/10.1.30]
+2024-10-05 22:24:03.3040 {restartedMain} INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] -Initializing Spring embedded WebApplicationContext
+2024-10-05 22:24:03.3050 {restartedMain} INFO  o.s.b.w.s.c.ServletWebServerApplicationContext -Root WebApplicationContext: initialization completed in 182 ms
+2024-10-05 22:24:03.3470 {restartedMain} INFO  com.zaxxer.hikari.HikariDataSource -HikariPool-4 - Starting...
+2024-10-05 22:24:03.3780 {restartedMain} INFO  com.zaxxer.hikari.pool.HikariPool -HikariPool-4 - Added connection com.mysql.cj.jdbc.ConnectionImpl@18d57c6d
+2024-10-05 22:24:03.3790 {restartedMain} INFO  com.zaxxer.hikari.HikariDataSource -HikariPool-4 - Start completed.
+2024-10-05 22:24:03.3800 {restartedMain} INFO  org.hibernate.jpa.internal.util.LogHelper -HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-10-05 22:24:03.3830 {restartedMain} INFO  o.hibernate.cache.internal.RegionFactoryInitiator -HHH000026: Second-level cache disabled
+2024-10-05 22:24:03.3970 {restartedMain} INFO  o.s.o.j.persistenceunit.SpringPersistenceUnitInfo -No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-10-05 22:24:03.4410 {restartedMain} INFO  o.h.e.t.jta.platform.internal.JtaPlatformInitiator -HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-10-05 22:24:03.4420 {restartedMain} INFO  o.s.orm.jpa.LocalContainerEntityManagerFactoryBean -Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-10-05 22:24:03.4490 {restartedMain} WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext -Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'userController' defined in file [/home/ym/traffic-master/traffic-system/target/classes/com/everpower/traffic_system/web/UserController.class]: Failed to instantiate [com.everpower.traffic_system.web.UserController]: Constructor threw exception
+2024-10-05 22:24:03.4490 {restartedMain} INFO  o.s.orm.jpa.LocalContainerEntityManagerFactoryBean -Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-10-05 22:24:03.4500 {restartedMain} INFO  com.zaxxer.hikari.HikariDataSource -HikariPool-4 - Shutdown initiated...
+2024-10-05 22:24:03.4520 {restartedMain} INFO  com.zaxxer.hikari.HikariDataSource -HikariPool-4 - Shutdown completed.
+2024-10-05 22:24:03.4520 {restartedMain} INFO  org.apache.catalina.core.StandardService -Stopping service [Tomcat]
+2024-10-05 22:24:03.4580 {restartedMain} INFO  o.s.b.a.logging.ConditionEvaluationReportLogger -
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2024-10-05 22:24:03.4750 {restartedMain} ERROR org.springframework.boot.SpringApplication -Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'userController' defined in file [/home/ym/traffic-master/traffic-system/target/classes/com/everpower/traffic_system/web/UserController.class]: Failed to instantiate [com.everpower.traffic_system.web.UserController]: Constructor threw exception
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateBean(AbstractAutowireCapableBeanFactory.java:1337)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1222)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:562)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:522)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:337)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:975)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:971)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:625)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:456)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:335)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1363)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1352)
+	at com.everpower.traffic_system.TrafficSystemApplication.main(TrafficSystemApplication.java:10)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50)
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.everpower.traffic_system.web.UserController]: Constructor threw exception
+	at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:221)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:94)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateBean(AbstractAutowireCapableBeanFactory.java:1331)
+	... 20 common frames omitted
+Caused by: java.lang.Error: Unresolved compilation problems: 
+	The import com.everpower.traffic_api_commons cannot be resolved
+	Syntax error, insert "Identifier (" to complete MethodHeaderName
+	Syntax error, insert ")" to complete MethodDeclaration
+	Syntax error, insert ";" to complete ClassBodyDeclarations
+
+	at com.everpower.traffic_system.web.UserController.<init>(UserController.java:4)
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:195)
+	... 22 common frames omitted
+2024-10-05 22:25:31.9740 {restartedMain} INFO  c.e.traffic_system.TrafficSystemApplication -Starting TrafficSystemApplication using Java 21.0.4 with PID 1220892 (/home/ym/traffic-master/traffic-system/target/classes started by root in /home/ym/traffic-master)
+2024-10-05 22:25:31.9740 {restartedMain} INFO  c.e.traffic_system.TrafficSystemApplication -The following 1 profile is active: "dev"
+2024-10-05 22:25:32.0620 {restartedMain} INFO  o.s.d.r.config.RepositoryConfigurationDelegate -Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-10-05 22:25:32.0670 {restartedMain} INFO  o.s.d.r.config.RepositoryConfigurationDelegate -Finished Spring Data repository scanning in 5 ms. Found 1 JPA repository interface.
+2024-10-05 22:25:32.1270 {restartedMain} INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer -Tomcat initialized with port 8080 (http)
+2024-10-05 22:25:32.1280 {restartedMain} INFO  org.apache.coyote.http11.Http11NioProtocol -Initializing ProtocolHandler ["http-nio-8080"]
+2024-10-05 22:25:32.1280 {restartedMain} INFO  org.apache.catalina.core.StandardService -Starting service [Tomcat]
+2024-10-05 22:25:32.1280 {restartedMain} INFO  org.apache.catalina.core.StandardEngine -Starting Servlet engine: [Apache Tomcat/10.1.30]
+2024-10-05 22:25:32.1360 {restartedMain} INFO  o.a.c.c.ContainerBase.[Tomcat-1].[localhost].[/] -Initializing Spring embedded WebApplicationContext
+2024-10-05 22:25:32.1370 {restartedMain} INFO  o.s.b.w.s.c.ServletWebServerApplicationContext -Root WebApplicationContext: initialization completed in 161 ms
+2024-10-05 22:25:32.1590 {restartedMain} INFO  com.zaxxer.hikari.HikariDataSource -HikariPool-5 - Starting...
+2024-10-05 22:25:32.1770 {restartedMain} INFO  com.zaxxer.hikari.pool.HikariPool -HikariPool-5 - Added connection com.mysql.cj.jdbc.ConnectionImpl@209b9019
+2024-10-05 22:25:32.1780 {restartedMain} INFO  com.zaxxer.hikari.HikariDataSource -HikariPool-5 - Start completed.
+2024-10-05 22:25:32.1790 {restartedMain} INFO  org.hibernate.jpa.internal.util.LogHelper -HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-10-05 22:25:32.1810 {restartedMain} INFO  o.hibernate.cache.internal.RegionFactoryInitiator -HHH000026: Second-level cache disabled
+2024-10-05 22:25:32.1880 {restartedMain} INFO  o.s.o.j.persistenceunit.SpringPersistenceUnitInfo -No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-10-05 22:25:32.2480 {restartedMain} INFO  o.h.e.t.jta.platform.internal.JtaPlatformInitiator -HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-10-05 22:25:32.2480 {restartedMain} INFO  o.s.orm.jpa.LocalContainerEntityManagerFactoryBean -Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-10-05 22:25:32.2540 {restartedMain} WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext -Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'userController' defined in file [/home/ym/traffic-master/traffic-system/target/classes/com/everpower/traffic_system/web/UserController.class]: Failed to instantiate [com.everpower.traffic_system.web.UserController]: Constructor threw exception
+2024-10-05 22:25:32.2540 {restartedMain} INFO  o.s.orm.jpa.LocalContainerEntityManagerFactoryBean -Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-10-05 22:25:32.2540 {restartedMain} INFO  com.zaxxer.hikari.HikariDataSource -HikariPool-5 - Shutdown initiated...
+2024-10-05 22:25:32.2750 {restartedMain} INFO  com.zaxxer.hikari.HikariDataSource -HikariPool-5 - Shutdown completed.
+2024-10-05 22:25:32.2760 {restartedMain} INFO  org.apache.catalina.core.StandardService -Stopping service [Tomcat]
+2024-10-05 22:25:32.2800 {restartedMain} INFO  o.s.b.a.logging.ConditionEvaluationReportLogger -
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2024-10-05 22:25:32.2820 {restartedMain} ERROR org.springframework.boot.SpringApplication -Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'userController' defined in file [/home/ym/traffic-master/traffic-system/target/classes/com/everpower/traffic_system/web/UserController.class]: Failed to instantiate [com.everpower.traffic_system.web.UserController]: Constructor threw exception
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateBean(AbstractAutowireCapableBeanFactory.java:1337)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1222)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:562)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:522)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:337)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:975)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:971)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:625)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:456)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:335)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1363)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1352)
+	at com.everpower.traffic_system.TrafficSystemApplication.main(TrafficSystemApplication.java:10)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50)
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.everpower.traffic_system.web.UserController]: Constructor threw exception
+	at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:221)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:94)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateBean(AbstractAutowireCapableBeanFactory.java:1331)
+	... 20 common frames omitted
+Caused by: java.lang.Error: Unresolved compilation problems: 
+	The import com.everpower.traffic_api_commons cannot be resolved
+	Syntax error, insert "Identifier (" to complete MethodHeaderName
+	Syntax error, insert ")" to complete MethodDeclaration
+	Syntax error, insert ";" to complete ClassBodyDeclarations
+
+	at com.everpower.traffic_system.web.UserController.<init>(UserController.java:4)
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:195)
+	... 22 common frames omitted
+2024-10-05 22:28:28.8560 {restartedMain} INFO  c.e.traffic_system.TrafficSystemApplication -Starting TrafficSystemApplication using Java 21.0.4 with PID 1220892 (/home/ym/traffic-master/traffic-system/target/classes started by root in /home/ym/traffic-master)
+2024-10-05 22:28:28.8560 {restartedMain} INFO  c.e.traffic_system.TrafficSystemApplication -The following 1 profile is active: "dev"
+2024-10-05 22:28:28.9820 {restartedMain} INFO  o.s.d.r.config.RepositoryConfigurationDelegate -Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-10-05 22:28:28.9900 {restartedMain} INFO  o.s.d.r.config.RepositoryConfigurationDelegate -Finished Spring Data repository scanning in 7 ms. Found 1 JPA repository interface.
+2024-10-05 22:28:29.0630 {restartedMain} INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer -Tomcat initialized with port 8080 (http)
+2024-10-05 22:28:29.0640 {restartedMain} INFO  org.apache.coyote.http11.Http11NioProtocol -Initializing ProtocolHandler ["http-nio-8080"]
+2024-10-05 22:28:29.0650 {restartedMain} INFO  org.apache.catalina.core.StandardService -Starting service [Tomcat]
+2024-10-05 22:28:29.0650 {restartedMain} INFO  org.apache.catalina.core.StandardEngine -Starting Servlet engine: [Apache Tomcat/10.1.30]
+2024-10-05 22:28:29.0780 {restartedMain} INFO  o.a.c.c.ContainerBase.[Tomcat-2].[localhost].[/] -Initializing Spring embedded WebApplicationContext
+2024-10-05 22:28:29.0780 {restartedMain} INFO  o.s.b.w.s.c.ServletWebServerApplicationContext -Root WebApplicationContext: initialization completed in 220 ms
+2024-10-05 22:28:29.1040 {restartedMain} INFO  com.zaxxer.hikari.HikariDataSource -HikariPool-6 - Starting...
+2024-10-05 22:28:29.1190 {restartedMain} INFO  com.zaxxer.hikari.pool.HikariPool -HikariPool-6 - Added connection com.mysql.cj.jdbc.ConnectionImpl@8d8d7d
+2024-10-05 22:28:29.1190 {restartedMain} INFO  com.zaxxer.hikari.HikariDataSource -HikariPool-6 - Start completed.
+2024-10-05 22:28:29.1200 {restartedMain} INFO  org.hibernate.jpa.internal.util.LogHelper -HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-10-05 22:28:29.1220 {restartedMain} INFO  o.hibernate.cache.internal.RegionFactoryInitiator -HHH000026: Second-level cache disabled
+2024-10-05 22:28:29.1310 {restartedMain} INFO  o.s.o.j.persistenceunit.SpringPersistenceUnitInfo -No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-10-05 22:28:29.1980 {restartedMain} INFO  o.h.e.t.jta.platform.internal.JtaPlatformInitiator -HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-10-05 22:28:29.1990 {restartedMain} INFO  o.s.orm.jpa.LocalContainerEntityManagerFactoryBean -Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-10-05 22:28:29.2070 {restartedMain} WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext -Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'userController': Lookup method resolution failed
+2024-10-05 22:28:29.2070 {restartedMain} INFO  o.s.orm.jpa.LocalContainerEntityManagerFactoryBean -Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-10-05 22:28:29.2080 {restartedMain} INFO  com.zaxxer.hikari.HikariDataSource -HikariPool-6 - Shutdown initiated...
+2024-10-05 22:28:29.2130 {restartedMain} INFO  com.zaxxer.hikari.HikariDataSource -HikariPool-6 - Shutdown completed.
+2024-10-05 22:28:29.2140 {restartedMain} INFO  org.apache.catalina.core.StandardService -Stopping service [Tomcat]
+2024-10-05 22:28:29.2210 {restartedMain} INFO  o.s.b.a.logging.ConditionEvaluationReportLogger -
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2024-10-05 22:28:29.2230 {restartedMain} ERROR org.springframework.boot.SpringApplication -Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'userController': Lookup method resolution failed
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.checkLookupMethods(AutowiredAnnotationBeanPostProcessor.java:498)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.determineCandidateConstructors(AutowiredAnnotationBeanPostProcessor.java:368)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.determineConstructorsFromBeanPostProcessors(AbstractAutowireCapableBeanFactory.java:1314)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1209)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:562)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:522)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:337)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:975)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:971)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:625)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:456)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:335)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1363)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1352)
+	at com.everpower.traffic_system.TrafficSystemApplication.main(TrafficSystemApplication.java:10)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50)
+Caused by: java.lang.IllegalStateException: Failed to introspect Class [com.everpower.traffic_system.web.UserController] from ClassLoader [org.springframework.boot.devtools.restart.classloader.RestartClassLoader@926c07c]
+	at org.springframework.util.ReflectionUtils.getDeclaredMethods(ReflectionUtils.java:483)
+	at org.springframework.util.ReflectionUtils.doWithLocalMethods(ReflectionUtils.java:320)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.checkLookupMethods(AutowiredAnnotationBeanPostProcessor.java:476)
+	... 22 common frames omitted
+Caused by: java.lang.NoClassDefFoundError: ResponseResult
+	at java.base/java.lang.Class.getDeclaredMethods0(Native Method)
+	at java.base/java.lang.Class.privateGetDeclaredMethods(Class.java:3578)
+	at java.base/java.lang.Class.getDeclaredMethods(Class.java:2676)
+	at org.springframework.util.ReflectionUtils.getDeclaredMethods(ReflectionUtils.java:465)
+	... 24 common frames omitted
+Caused by: java.lang.ClassNotFoundException: ResponseResult
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:641)
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:188)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:526)
+	at java.base/java.lang.Class.forName0(Native Method)
+	at java.base/java.lang.Class.forName(Class.java:534)
+	at java.base/java.lang.Class.forName(Class.java:513)
+	at org.springframework.boot.devtools.restart.classloader.RestartClassLoader.loadClass(RestartClassLoader.java:121)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:526)
+	... 28 common frames omitted
