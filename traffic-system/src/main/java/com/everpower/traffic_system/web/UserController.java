@@ -1,20 +1,12 @@
 package com.everpower.traffic_system.web;
 
-import java.net.http.HttpResponse;
-
 import com.everpower.traffic_api_commons.*;
 import com.everpower.traffic_system.info.UserInfo;
+import com.everpower.traffic_system.service.UserService;
 
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.bind.annotation.GetMapping;
-
-import com.everpower.traffic_system.service.UserService;
-
-
 
 @RestController
 @RequestMapping("/user")

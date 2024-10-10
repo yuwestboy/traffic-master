@@ -13,21 +13,7 @@
 	<name>traffic-system</name>
 	<packaging>jar</packaging>
 	<description>traffic project for Spring Boot</description>
-
-	<repositories>
-		<repository>
-			<id>central</id>
-			<url>http://host:port/content/groups/public</url>
-		</repository>
-	</repositories>
 	
-	<pluginRepositories>
-		<pluginRepository>
-			<id>central</id>
-			<url>http://host:port/content/groups/public</url>
-		</pluginRepository>
-	</pluginRepositories>
-
 	<build>
 		
 	</build>
@@ -35,13 +21,13 @@
 	<dependencies>
 		<dependency>
 			<groupId>com.everpower</groupId>
-			<artifactId>traffic-api</artifactId>
+			<artifactId>traffic-api-commons</artifactId>
 			<version>0.0.1</version>
 			<scope>compile</scope>
 		</dependency>
 		<dependency>
 			<groupId>com.everpower</groupId>
-			<artifactId>traffic-api-commons</artifactId>
+			<artifactId>traffic-api-resultcode</artifactId>
 			<version>0.0.1</version>
 			<scope>compile</scope>
 		</dependency>
@@ -58,10 +44,5 @@
 			<artifactId>mysql-connector-j</artifactId>
 			<scope>runtime</scope>
 		</dependency>
-		<!-- <dependency>
-			<groupId>com.everpower</groupId>
-			<artifactId>traffic-api</artifactId>
-			<version>0.0.1</version>
-		</dependency> -->
 	</dependencies>
 </project>

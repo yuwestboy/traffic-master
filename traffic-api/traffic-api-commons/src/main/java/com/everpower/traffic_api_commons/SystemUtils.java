@@ -1,5 +1,8 @@
 package com.everpower.traffic_api_commons;
 
+import org.springframework.stereotype.Component;
+
+@Component
 public class SystemUtils {
 
     /*

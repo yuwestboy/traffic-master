@@ -1,8 +1,5 @@
 package com.everpower.traffic_system.info;
 
-import org.aspectj.lang.annotation.control.CodeGenerationHint;
-import org.hibernate.annotations.Collate;
-
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;

@@ -1,13 +1,13 @@
 package com.everpower.traffic_api_commons;
 
-import com.everpower.traffic_api_resultcode.*;
+import com.everpower.traffic_api_resultcode.SystemCode;
 
 
 /**
  * 构建一个通用的成功返回结果
  * @return
  */
-public class ResponseResultFactory<T> {
+public class ResponseResultFactory {
 
     public static ResponseResult buildResponseResult() {
         return new ResponseResult(SystemCode.TRAFFIC_SYSTEM_SUCCESS);

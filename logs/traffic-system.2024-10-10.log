@@ -1,0 +1,132 @@
+2024-10-10 15:35:50.6210 {restartedMain} INFO  c.e.traffic_system.TrafficSystemApplication -Starting TrafficSystemApplication using Java 21.0.4 with PID 2025614 (/home/ym/traffic-master/traffic-system/target/classes started by root in /home/ym/traffic-master)
+2024-10-10 15:35:50.6230 {restartedMain} INFO  c.e.traffic_system.TrafficSystemApplication -The following 1 profile is active: "dev"
+2024-10-10 15:35:50.6690 {restartedMain} INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor -Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-10-10 15:35:50.6700 {restartedMain} INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor -For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-10-10 15:35:51.2980 {restartedMain} INFO  o.s.d.r.config.RepositoryConfigurationDelegate -Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-10-10 15:35:51.3520 {restartedMain} INFO  o.s.d.r.config.RepositoryConfigurationDelegate -Finished Spring Data repository scanning in 46 ms. Found 1 JPA repository interface.
+2024-10-10 15:35:51.8870 {restartedMain} INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer -Tomcat initialized with port 8080 (http)
+2024-10-10 15:35:51.9020 {restartedMain} INFO  org.apache.coyote.http11.Http11NioProtocol -Initializing ProtocolHandler ["http-nio-8080"]
+2024-10-10 15:35:51.9060 {restartedMain} INFO  org.apache.catalina.core.StandardService -Starting service [Tomcat]
+2024-10-10 15:35:51.9070 {restartedMain} INFO  org.apache.catalina.core.StandardEngine -Starting Servlet engine: [Apache Tomcat/10.1.30]
+2024-10-10 15:35:51.9480 {restartedMain} INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] -Initializing Spring embedded WebApplicationContext
+2024-10-10 15:35:51.9500 {restartedMain} INFO  o.s.b.w.s.c.ServletWebServerApplicationContext -Root WebApplicationContext: initialization completed in 1279 ms
+2024-10-10 15:35:52.0620 {restartedMain} INFO  com.zaxxer.hikari.HikariDataSource -HikariPool-1 - Starting...
+2024-10-10 15:35:52.4080 {restartedMain} INFO  com.zaxxer.hikari.pool.HikariPool -HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@fdb6cb8
+2024-10-10 15:35:52.4090 {restartedMain} INFO  com.zaxxer.hikari.HikariDataSource -HikariPool-1 - Start completed.
+2024-10-10 15:35:52.4430 {restartedMain} INFO  org.hibernate.jpa.internal.util.LogHelper -HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-10-10 15:35:52.4780 {restartedMain} INFO  org.hibernate.Version -HHH000412: Hibernate ORM core version 6.5.3.Final
+2024-10-10 15:35:52.5000 {restartedMain} INFO  o.hibernate.cache.internal.RegionFactoryInitiator -HHH000026: Second-level cache disabled
+2024-10-10 15:35:52.7590 {restartedMain} INFO  o.s.o.j.persistenceunit.SpringPersistenceUnitInfo -No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-10-10 15:35:53.4090 {restartedMain} INFO  o.h.e.t.jta.platform.internal.JtaPlatformInitiator -HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-10-10 15:35:53.4120 {restartedMain} INFO  o.s.orm.jpa.LocalContainerEntityManagerFactoryBean -Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-10-10 15:35:53.6090 {restartedMain} WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext -Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'userServiceImpl' defined in file [/home/ym/traffic-master/traffic-system/target/classes/com/everpower/traffic_system/service/impl/UserServiceImpl.class]: Unsatisfied dependency expressed through constructor parameter 1: No qualifying bean of type 'com.everpower.traffic_api_commons.SystemUtils' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+2024-10-10 15:35:53.6100 {restartedMain} INFO  o.s.orm.jpa.LocalContainerEntityManagerFactoryBean -Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-10-10 15:35:53.6120 {restartedMain} INFO  com.zaxxer.hikari.HikariDataSource -HikariPool-1 - Shutdown initiated...
+2024-10-10 15:35:53.6220 {restartedMain} INFO  com.zaxxer.hikari.HikariDataSource -HikariPool-1 - Shutdown completed.
+2024-10-10 15:35:53.6230 {restartedMain} INFO  org.apache.catalina.core.StandardService -Stopping service [Tomcat]
+2024-10-10 15:35:53.6370 {restartedMain} INFO  o.s.b.a.logging.ConditionEvaluationReportLogger -
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2024-10-10 15:35:53.6570 {restartedMain} ERROR o.s.b.diagnostics.LoggingFailureAnalysisReporter -
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 1 of constructor in com.everpower.traffic_system.service.impl.UserServiceImpl required a bean of type 'com.everpower.traffic_api_commons.SystemUtils' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'com.everpower.traffic_api_commons.SystemUtils' in your configuration.
+
+2024-10-10 15:39:51.5470 {restartedMain} INFO  c.e.traffic_system.TrafficSystemApplication -Starting TrafficSystemApplication using Java 21.0.4 with PID 2026131 (/home/ym/traffic-master/traffic-system/target/classes started by root in /home/ym/traffic-master)
+2024-10-10 15:39:51.5490 {restartedMain} INFO  c.e.traffic_system.TrafficSystemApplication -The following 1 profile is active: "dev"
+2024-10-10 15:39:51.6200 {restartedMain} INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor -Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-10-10 15:39:51.6210 {restartedMain} INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor -For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-10-10 15:39:52.2300 {restartedMain} INFO  o.s.d.r.config.RepositoryConfigurationDelegate -Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-10-10 15:39:52.2830 {restartedMain} INFO  o.s.d.r.config.RepositoryConfigurationDelegate -Finished Spring Data repository scanning in 45 ms. Found 1 JPA repository interface.
+2024-10-10 15:39:52.8240 {restartedMain} INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer -Tomcat initialized with port 8080 (http)
+2024-10-10 15:39:52.8350 {restartedMain} INFO  org.apache.coyote.http11.Http11NioProtocol -Initializing ProtocolHandler ["http-nio-8080"]
+2024-10-10 15:39:52.8390 {restartedMain} INFO  org.apache.catalina.core.StandardService -Starting service [Tomcat]
+2024-10-10 15:39:52.8390 {restartedMain} INFO  org.apache.catalina.core.StandardEngine -Starting Servlet engine: [Apache Tomcat/10.1.30]
+2024-10-10 15:39:52.8810 {restartedMain} INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] -Initializing Spring embedded WebApplicationContext
+2024-10-10 15:39:52.8820 {restartedMain} INFO  o.s.b.w.s.c.ServletWebServerApplicationContext -Root WebApplicationContext: initialization completed in 1260 ms
+2024-10-10 15:39:53.0190 {restartedMain} INFO  com.zaxxer.hikari.HikariDataSource -HikariPool-1 - Starting...
+2024-10-10 15:39:53.3290 {restartedMain} INFO  com.zaxxer.hikari.pool.HikariPool -HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@2fdb94c7
+2024-10-10 15:39:53.3310 {restartedMain} INFO  com.zaxxer.hikari.HikariDataSource -HikariPool-1 - Start completed.
+2024-10-10 15:39:53.3630 {restartedMain} INFO  org.hibernate.jpa.internal.util.LogHelper -HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-10-10 15:39:53.3990 {restartedMain} INFO  org.hibernate.Version -HHH000412: Hibernate ORM core version 6.5.3.Final
+2024-10-10 15:39:53.4200 {restartedMain} INFO  o.hibernate.cache.internal.RegionFactoryInitiator -HHH000026: Second-level cache disabled
+2024-10-10 15:39:53.6960 {restartedMain} INFO  o.s.o.j.persistenceunit.SpringPersistenceUnitInfo -No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-10-10 15:39:54.3520 {restartedMain} INFO  o.h.e.t.jta.platform.internal.JtaPlatformInitiator -HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-10-10 15:39:54.3540 {restartedMain} INFO  o.s.orm.jpa.LocalContainerEntityManagerFactoryBean -Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-10-10 15:39:54.5140 {restartedMain} WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext -Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'userServiceImpl' defined in file [/home/ym/traffic-master/traffic-system/target/classes/com/everpower/traffic_system/service/impl/UserServiceImpl.class]: Unsatisfied dependency expressed through constructor parameter 1: No qualifying bean of type 'com.everpower.traffic_api_commons.SystemUtils' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+2024-10-10 15:39:54.5150 {restartedMain} INFO  o.s.orm.jpa.LocalContainerEntityManagerFactoryBean -Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-10-10 15:39:54.5170 {restartedMain} INFO  com.zaxxer.hikari.HikariDataSource -HikariPool-1 - Shutdown initiated...
+2024-10-10 15:39:54.5240 {restartedMain} INFO  com.zaxxer.hikari.HikariDataSource -HikariPool-1 - Shutdown completed.
+2024-10-10 15:39:54.5260 {restartedMain} INFO  org.apache.catalina.core.StandardService -Stopping service [Tomcat]
+2024-10-10 15:39:54.5370 {restartedMain} INFO  o.s.b.a.logging.ConditionEvaluationReportLogger -
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2024-10-10 15:39:54.5550 {restartedMain} ERROR o.s.b.diagnostics.LoggingFailureAnalysisReporter -
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 1 of constructor in com.everpower.traffic_system.service.impl.UserServiceImpl required a bean of type 'com.everpower.traffic_api_commons.SystemUtils' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'com.everpower.traffic_api_commons.SystemUtils' in your configuration.
+
+2024-10-10 15:41:18.6180 {restartedMain} INFO  c.e.traffic_system.TrafficSystemApplication -Starting TrafficSystemApplication using Java 21.0.4 with PID 2026466 (/home/ym/traffic-master/traffic-system/target/classes started by root in /home/ym/traffic-master)
+2024-10-10 15:41:18.6200 {restartedMain} INFO  c.e.traffic_system.TrafficSystemApplication -The following 1 profile is active: "dev"
+2024-10-10 15:41:18.6910 {restartedMain} INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor -Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-10-10 15:41:18.6910 {restartedMain} INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor -For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-10-10 15:41:19.3150 {restartedMain} INFO  o.s.d.r.config.RepositoryConfigurationDelegate -Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-10-10 15:41:19.3660 {restartedMain} INFO  o.s.d.r.config.RepositoryConfigurationDelegate -Finished Spring Data repository scanning in 44 ms. Found 1 JPA repository interface.
+2024-10-10 15:41:19.9090 {restartedMain} INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer -Tomcat initialized with port 8080 (http)
+2024-10-10 15:41:19.9210 {restartedMain} INFO  org.apache.coyote.http11.Http11NioProtocol -Initializing ProtocolHandler ["http-nio-8080"]
+2024-10-10 15:41:19.9260 {restartedMain} INFO  org.apache.catalina.core.StandardService -Starting service [Tomcat]
+2024-10-10 15:41:19.9260 {restartedMain} INFO  org.apache.catalina.core.StandardEngine -Starting Servlet engine: [Apache Tomcat/10.1.30]
+2024-10-10 15:41:19.9650 {restartedMain} INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] -Initializing Spring embedded WebApplicationContext
+2024-10-10 15:41:19.9660 {restartedMain} INFO  o.s.b.w.s.c.ServletWebServerApplicationContext -Root WebApplicationContext: initialization completed in 1273 ms
+2024-10-10 15:41:20.0900 {restartedMain} INFO  com.zaxxer.hikari.HikariDataSource -HikariPool-1 - Starting...
+2024-10-10 15:41:20.4180 {restartedMain} INFO  com.zaxxer.hikari.pool.HikariPool -HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@dbcfb19
+2024-10-10 15:41:20.4190 {restartedMain} INFO  com.zaxxer.hikari.HikariDataSource -HikariPool-1 - Start completed.
+2024-10-10 15:41:20.4520 {restartedMain} INFO  org.hibernate.jpa.internal.util.LogHelper -HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-10-10 15:41:20.4860 {restartedMain} INFO  org.hibernate.Version -HHH000412: Hibernate ORM core version 6.5.3.Final
+2024-10-10 15:41:20.5070 {restartedMain} INFO  o.hibernate.cache.internal.RegionFactoryInitiator -HHH000026: Second-level cache disabled
+2024-10-10 15:41:20.7520 {restartedMain} INFO  o.s.o.j.persistenceunit.SpringPersistenceUnitInfo -No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-10-10 15:41:21.4330 {restartedMain} INFO  o.h.e.t.jta.platform.internal.JtaPlatformInitiator -HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-10-10 15:41:21.4360 {restartedMain} INFO  o.s.orm.jpa.LocalContainerEntityManagerFactoryBean -Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-10-10 15:41:21.6300 {restartedMain} WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext -Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'userServiceImpl' defined in file [/home/ym/traffic-master/traffic-system/target/classes/com/everpower/traffic_system/service/impl/UserServiceImpl.class]: Unsatisfied dependency expressed through constructor parameter 1: No qualifying bean of type 'com.everpower.traffic_api_commons.SystemUtils' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+2024-10-10 15:41:21.6300 {restartedMain} INFO  o.s.orm.jpa.LocalContainerEntityManagerFactoryBean -Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-10-10 15:41:21.6330 {restartedMain} INFO  com.zaxxer.hikari.HikariDataSource -HikariPool-1 - Shutdown initiated...
+2024-10-10 15:41:21.6440 {restartedMain} INFO  com.zaxxer.hikari.HikariDataSource -HikariPool-1 - Shutdown completed.
+2024-10-10 15:41:21.6460 {restartedMain} INFO  org.apache.catalina.core.StandardService -Stopping service [Tomcat]
+2024-10-10 15:41:21.6590 {restartedMain} INFO  o.s.b.a.logging.ConditionEvaluationReportLogger -
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2024-10-10 15:41:21.6790 {restartedMain} ERROR o.s.b.diagnostics.LoggingFailureAnalysisReporter -
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 1 of constructor in com.everpower.traffic_system.service.impl.UserServiceImpl required a bean of type 'com.everpower.traffic_api_commons.SystemUtils' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'com.everpower.traffic_api_commons.SystemUtils' in your configuration.
+

@@ -1,14 +1,14 @@
 package com.everpower.traffic_api_commons;
 
 // 每次请求都返回
-public class ResponseResult<T> {
+public class ResponseResult {
 
     // 当前的响应代码
     String resultCode;
     // 当前响应的信息
     String resultMsg;
     // 具体的结果
-    T ressult;
+    Object ressult;
 
     public ResponseResult(String resultCode) {
         this.resultCode = resultCode;
@@ -19,7 +19,7 @@ public class ResponseResult<T> {
         this.resultMsg = resultMsg;
     }
 
-    public ResponseResult(String resultCode, String resultMsg, T ressult) {
+    public ResponseResult(String resultCode, String resultMsg, Object ressult) {
         this.resultCode = resultCode;
         this.resultMsg = resultMsg;
         this.ressult = ressult;
@@ -41,11 +41,11 @@ public class ResponseResult<T> {
         this.resultMsg = resultMsg;
     }
 
-    public T getRessult() {
+    public Object getRessult() {
         return this.ressult;
     }
 
-    public void setRessult(T ressult) {
+    public void setRessult(Object ressult) {
         this.ressult = ressult;
     }
     
